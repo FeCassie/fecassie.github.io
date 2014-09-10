@@ -27,8 +27,8 @@ kramdown:
 # Site owner
 owner:
   name: Fatih Erdogan
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  avatar: fatih_avatar.jpg
+  bio: "I love Linux!"
   email: 
   disqus-shortname: 
   twitter: FeCassie
@@ -43,7 +43,7 @@ owner:
   github: FeCassie
   stackoverflow: #http://stackoverflow.com/users/123456/username
   linkedin: #username
-  instagram: #username
+  instagram: fat1herdogan
   lastfm: #username
   tumblr: #username
   pinterest: #username

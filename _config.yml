@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Fatih Erdogan
+title:            Fatih Erdoğan
 locale:           en_US
 url:              http://fecassie.github.io
 
@@ -26,13 +26,13 @@ kramdown:
 
 # Site owner
 owner:
-  name: Fatih Erdogan
+  name: Fatih Erdoğan
   avatar: fatih_avatar.jpg
-  bio: "I love Linux!"
+  bio: "Linux, Pentest, Reversing"
   email: 
   disqus-shortname: 
   twitter: FeCassie
-  facebook: #username
+  facebook: f4tihErd0gan
   google:
     plus: #username
     analytics: 
@@ -42,7 +42,7 @@ owner:
   bing-verify: 
   github: FeCassie
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: https://www.linkedin.com/pub/fatih-erdoğan/83/0/907
   instagram: fat1herdogan
   lastfm: #username
   tumblr: #username

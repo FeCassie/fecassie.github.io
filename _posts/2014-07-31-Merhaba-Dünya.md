@@ -15,3 +15,18 @@ if a:
     print "asdasdoıasndpıad"
 while True:
 ```
+
+~~~
+print "asapsdasdn"
+if a:
+    print "asdasdoıasndpıad"
+while True:
+~~~
+
+
+<code>
+print "asapsdasdn"
+if a:
+    print "asdasdoıasndpıad"
+while True:
+</code>

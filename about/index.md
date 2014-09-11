@@ -10,7 +10,7 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-**Name:** Fatih Erdoğan
+	**Name:** Fatih Erdoğan
 
 **Education:** Sakarya University - Computer Engineering
 

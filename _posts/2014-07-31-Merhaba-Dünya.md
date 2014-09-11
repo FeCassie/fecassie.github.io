@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Merhaba Dünya!"
-author: Fatih Erdoğan
+author: fatih_erdogan
 modified:
 excerpt: "ilk post"
 tags: []

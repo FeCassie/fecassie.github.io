@@ -9,6 +9,8 @@ tags: []
 Hello World!
 
 
+<font color="blue">selam kelam</font>
+
 ```
 print "asapsdasdn"
 if a:
@@ -23,7 +25,7 @@ if a:
 while True:
 ~~~
 
-{: fatih .notice}
+{: .notice}
 <code>
 print "asapsdasdn"
 if a:

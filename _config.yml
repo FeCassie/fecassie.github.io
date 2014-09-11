@@ -53,3 +53,10 @@ owner:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+author.github: FeCassie
+author.stackoverflow: #http://stackoverflow.com/users/123456/username
+author.linkedin: fatiherdogan1
+author.instagram: fat1herdogan
+author.twitter: FeCassie
+author.facebook: f4tihErd0gan

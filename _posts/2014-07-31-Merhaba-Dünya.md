@@ -2,10 +2,9 @@
 layout: post
 title: "Merhaba Dünya!"
 author: fatih_erdogan
-modified:
+modified: fatih_erdogan
 excerpt: "ilk post"
 tags: []
 ---
-SELAM CANISI (:
+Hello World!
 
-deneme yazısı 

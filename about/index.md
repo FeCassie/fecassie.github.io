@@ -10,12 +10,17 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-	**Name:** Fatih Erdoğan
+
+**Name:** Fatih Erdoğan
+
 
 **Education:** Sakarya University - Computer Engineering
 
+
 **From:** Sakarya/Turkey
 
+
 **Interests:** Linux System Management, Reverse Engineering, Penetration Testing, C, Python, Bash Scripting, RaspberryPi
+
 
 **Jobs:** Linux & Open Source Development Researcher @ [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")

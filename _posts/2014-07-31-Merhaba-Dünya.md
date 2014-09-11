@@ -23,7 +23,7 @@ if a:
 while True:
 ~~~
 
-
+{: fatih .notice}
 <code>
 print "asapsdasdn"
 if a:

@@ -19,7 +19,7 @@ image:
 **From:** Sakarya/Turkey
 
 
-**Interests:** Linux System Management, Reverse Engineering, Penetration Testing, C, Python, Bash Scripting, RaspberryPi
+**Interests:** Linux System Management, Reverse Engineering, Penetration Testing, RaspberryPi
 
 
 **Jobs:** Linux & Open Source Development Researcher @ [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")

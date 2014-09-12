@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SSH Brute Force Attack vıa Metasploıt"
+title: "SSH Brute Force Attack via Metasploit"
 author: fatih_erdogan
 modified: fatih_erdogan
 excerpt: ""
@@ -30,4 +30,17 @@ SSH çalışma mantığı:
 
 ![SSH çalışma mantığı]({{ site.url }}/assets/ssh.jpg)
 
+Eğer SSH şifreniz varsayılan olarak tanımlıysa,şifreyi değiştirmenizi tavsiye ederim.
 
+Hemen bir Terminal(veya Konsol) açıp ;
+`passwd` veya `passwd root` komutunu verdikten sonra,
+Sizden yeni root şifrenizi girmeniz istenecektir.
+Bu şekilde root şifrenizi değiştirebilirsiniz.
+
+Umarım SSH hakkında anlattığım temel bilgiler faydalı olmuştur.
+Şimdi Metasploit ile SSH Serverlarına nasıl Brute Force saldırısı yapılır inceleyelebiliriz.
+
+Video şeklinde anlatmayı tercih ettim daha çok faydalı olması için.
+İyi seyirler..
+
+<iframe src="//player.vimeo.com/video/37900454" width="500" height="281" frameborder="0" allowfullscreen></iframe>

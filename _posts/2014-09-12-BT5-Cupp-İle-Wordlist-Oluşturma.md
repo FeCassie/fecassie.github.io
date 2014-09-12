@@ -16,5 +16,8 @@ Interaktif wordlist;ad soyad,takma ad,doğum günü,nickname vs. gibi anahtar ke
 
 CUPP ile Wordlist Oluşturma’yı video şeklinde anlattım.
 İyi seyirler.
-<iframe src="//player.vimeo.com/video/46651568" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/46651568">BT5 CUPP ile Wordlist Oluşturma</a> from <a href="http://vimeo.com/user10567288">cassie</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+<iframe src="//player.vimeo.com/video/46651568" width="500" height="281" frameborder="0" allowfullscreen></iframe>
+
 

@@ -14,5 +14,6 @@ Bu konumda Backtrack5 içinde bulunan python dili ile kodlanmış CUPP programı
 Interaktif wordlist;ad soyad,takma ad,doğum günü,nickname vs. gibi anahtar kelimelerle oluiturulan wordlist dosyasıdır.
 
 CUPP ile Wordlist Oluşturma’yı video şeklinde anlattım.
+Videoyu[BURADAN](http://vimeo.com/46651568) izleyebilirsiniz
 İyi seyirler.
-<a href="http://vimeo.com/46651568" target="_blank"></a>
+

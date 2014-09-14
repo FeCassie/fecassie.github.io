@@ -42,4 +42,8 @@ Sisteminizde openssl'in hangi versiyonda çalıştığını öğrenmek için `~$
 ![des3 şifreleme4]({{ site.url }}/assets/4.png)
 
 
+Görüldüğü üzere linux'ta dosyalar bu şekilde şifreleniyor ve şifreleri çözülebiliyor.Tabi bunların hepsini yaparken bir anahtar belirlememiz, çözerken de o anahtarı bilmemiz şart.
+Bir başka yazıda görüşmek üzere..
+
+<font color="red">fatih@FeCassie:~$</font>
 

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Fatih Erdoğan</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://fecassie.github.io" />
+<updated>2014-09-18T12:30:10+03:00</updated>
+<id>http://fecassie.github.io/</id>
+<author>
+  <name>Fatih Erdoğan</name>
+  <uri>http://fecassie.github.io/</uri>
+  
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Linux'ta Dosya Şifreleme]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Linuxta-Dosya-Sifreleme/" />
+  <id>http://fecassie.github.io/Linuxta-Dosya-Sifreleme</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-14T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhaba,
+Bu gece ilgimi çeken bir konuyu sizlerle paylaşmak istedim.Peki ne bu? Dosya Şifreleme!.Dosyaları şifrelemek, verileri saklamak vs. çoğu insanın ilgisini çekiyordur mutlaka.Benimde sadece TrueCrypt yazılımıyla şifreleme konusunda bilgim olmuştu, sonra işin linux kısmını araştırınca benzer şeylerin burada da yapıldığını gördüm ve bununla ilgili bir yazı yazmaya karar verdim.&lt;/p&gt;
+
+&lt;h3 id=&quot;peki-nasl-olacak-bu&quot;&gt;Peki nasıl olacak bu?&lt;/h3&gt;
+
+&lt;p&gt;Linux dağıtımlarında default olarak bulunan, SSL ve TSL protokollerinin açık kaynaklı bir uygulaması olan &lt;font color=&quot;green&quot;&gt;openssl&lt;/font&gt;‘i dosyalarınızı şifrelemek veya hash değerlerini almakta kullanabilirsiniz.&lt;/p&gt;
+
+&lt;h3 id=&quot;tamam-anladm-hadi-balayalm&quot;&gt;Tamam anladım, hadi başlayalım!&lt;/h3&gt;
+
+&lt;p&gt;Sisteminizde openssl’in hangi versiyonda çalıştığını öğrenmek için &lt;code&gt;~$ openssl version&lt;/code&gt; komutunu verebilirsiniz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Şifreleme algoritmalarını listelemek için
+  &lt;code&gt;~$ openssl ciphers -v&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;İlk olarak des3 algoritmasıyla sifrelebeni.txt dosyasını şifreleyelim.Şifreleme mantığı, belirlenen algoritma ve kendi belirlediğimiz bir anahtar eşliğiyle oluşuyor.Nasıl yani?
+Şifreleme için bir algoritmaya ve sadece bize ait bir anahtara ihtiyacımız var.Bu anahtar ile dosyayı hem şifreleyebilir hem de tekrar şifrelenmiş dosyayı açabiliriz.Şifrelediğimiz dosyayı açarken de bu anahtar bize lazım olacak.
+Şifrelenmiş dosya açılsa bile anahtar bilinmediği sürece dosyanın içindeki gerçek veriye ulaşılamayacaktır.
+  &lt;code&gt;~$ openssl enc -des3 -in sifrelebeni.txt -k anahtar&lt;/code&gt; komutuyla dosyamızı belirlediğimiz anahtarı kullanarak des3 algoritması ile şifreledik.
+&lt;img src=&quot;http://fecassie.github.io/assets/1.png&quot; alt=&quot;des3 şifreleme&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Şifrelenmiş içeriği bir dosyaya yazmak istersek &lt;code&gt;~$ openssl enc -des3 -in sifrelebeni.txt -out sifrelendi.des3 -k anahtar&lt;/code&gt; komutunu kullanabiliriz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/2.png&quot; alt=&quot;des3 şifreleme2&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Eğer dosya değilde komple bir dizini şifrelemek istiyorsak tar, openssl ve dd komutlarını birlikte kullanmamız gerekiyor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;~$ tar -zcf - dizin/ | openssl des3 -salt -k anahtar | dd of=dizin.des3&lt;/code&gt;
+&lt;img src=&quot;http://fecassie.github.io/assets/3.png&quot; alt=&quot;des3 şifreleme3&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Şifrelenmiş dizini çözmek için ise;
+&lt;code&gt;~$ dd if=dizin.des3 | openssl des3 -d -k anahtar | tar xzf -&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/4.png&quot; alt=&quot;des3 şifreleme4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Görüldüğü üzere linux’ta dosyalar bu şekilde şifreleniyor ve şifreleri çözülebiliyor.Tabi bunların hepsini yaparken bir anahtar belirlememiz, çözerken de o anahtarı bilmemiz şart.
+Bir başka yazıda görüşmek üzere..&lt;/p&gt;
+
+&lt;font color=&quot;red&quot;&gt;fatih@FeCassie:~$&lt;/font&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Linuxta-Dosya-Sifreleme/&quot;&gt;Linux'ta Dosya Şifreleme&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 14, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[TheHarvester ile Footprinting]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/TheHarvester-ile-Footprinting/" />
+  <id>http://fecassie.github.io/TheHarvester-ile-Footprinting</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-12T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+
+&lt;p&gt;Backtrack ile hedef sistem hakkında bilgi toplamanın farklı araçlarla birçok yolu vardır.
+Daha önceki yazımda yine Backtrack içerisinde bulunan Metagoofil aracıyla hedef sistemden nasıl pdf,doc vs. gibi belge toplayabileceğimizi anlatmıştım.
+&lt;a href=&quot;http://fecassie.github.io/Metagoofil-Belge-Toplama-Aracı/&quot;&gt;Metagoofil ile Belge Toplama&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Şimdi ise belge değilde daha farklı bilgi edinme yöntemlerinden bahsedeceğim.
+Öncelikle bilgi toplamanın önemine biraz değinmek istiyorum.
+Hedef sistem hakkında bilgi toplamanın; zafiyet tespit etme,portların durumunu,firewall ları,çalışan işletim sistemlerini ve IPS denilen saldırı tespit sistemlerinin keşfedilmesi kadar önemli olduğunu düşünüyorum.&lt;/p&gt;
+
+&lt;p&gt;Peki bunlardan farklı ne şekilde bilgi toplayabilirim?
+Hedef sistemdeki dökümantize edilmiş dosyaları bularak,hangi subdomainlerin hangi sanal host ların olduğunu tespit ederekte hedef sistem hakkında bilgi sahibi olabilirsiniz.
+Bu sayedede hedef sistem içindeki dosya akışı hakkında bilgi sahibi olabilirsiniz.
+Hedef sistemdeki kullanıcıların eposta adreslerini bularak,sisteme keşfettiğiniz eposta adreslerinden saldırmayı deneyebilirsiniz.
+Bu şekilde verilebilecek daha birçok örnek var..&lt;/p&gt;
+
+&lt;h2 id=&quot;theharvester-nedir&quot;&gt;theHarvester nedir??&lt;/h2&gt;
+
+&lt;p&gt;theHarvester; hedef sistemdeki Kullanıcı adlarını,Eposta hesaplarını,Hostname leri ve Subdomain leri bulup raporlayan bir araçtır.
+Bilgi toplarken aynı Metagoofil aracı gibi Google,Bing,Pgp,Linkedin gibi arama motorlarından yararlanır.
+Google,Bing ve Pgp Eposta,Hostname ve Subdomain bilgilerini bulurken Linkedin aracı sadece username bilgilerini bulmaktadır.&lt;/p&gt;
+
+&lt;h2 id=&quot;theharvester-nasl-kurabilirim&quot;&gt;theHarvester’ı nasıl kurabilirim??&lt;/h2&gt;
+
+&lt;p&gt;theHarvester’ı Linux sistemlere yüklemek için önce bir terminal(konsol) açıyoruz.Ardından aşağıdaki komutları yazıyoruz : &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;wget https://theharvester.googlecode.com/files/theHarvester-ng-2.0.tar&lt;/code&gt; = Bu komutla programın son sürümünü indiriyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;tar xvf theHarvester-ng-2.0.tar&lt;/code&gt; = Bu komutla indirdiğimiz programı tar halinden çıkartıyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd theHarvester-ng-2.0.tar&lt;/code&gt; = Programın kurulu olduğu dizine geçiyoruz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;chmod +x theHarvester.py&lt;/code&gt; = Programın sorunsuz çalışması için çalışma izni vermemiz gerekmekte.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;./theHarvester.py&lt;/code&gt; = Bu komutlada programımızı çalıştırıyoruz.&lt;/p&gt;
+
+&lt;p&gt;theHarvester kurulumunu Linux Mint12 üzerinde anlattım :&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/37825822&quot; width=&quot;500&quot; height=&quot;281&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;theharvester-kullanm&quot;&gt;theHarvester kullanımı&lt;/h2&gt;
+
+&lt;p&gt;Evet kurulumun ardından theHarvester aracının kullanımından bahsedelim.
+Kurulumu LinuxMint 12 üzerinde,Anlatımı ise Backtrack üzerinde yapıyoruz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bir Terminal açıyoruz.ve bu komutla theHarvester’ın olduğu dizine gidiyoruz.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;cd /pentest/enumeration/theharvester&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Daha sonra programımız açılıyor.
+Programın kullanımı çok basit.Genel arama komutu şu şekildedir :&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./theHarvester.py -d yahoo.com -b google -l 600 -v&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bu komutu kendinize göre düzenleyebilirsiniz.Zaten programın ana ekranındada örnekler mevcut.&lt;/p&gt;
+
+&lt;p&gt;-d parametresi; hedef siteyi
+-b parametresi; kullanılacak arama motorunu
+-l parametresi; limit değerini
+-f parametresi; tarama sonucunu html veya xml olarak kaydetmeyi
+-v parametresi ise DNS çözümlemesini belirtir.&lt;/p&gt;
+
+&lt;p&gt;Şimdi anlattıklarımızı video ile özetleyip konuyu noktalayalım.
+İyi seyirler.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/37834893&quot; width=&quot;500&quot; height=&quot;281&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/TheHarvester-ile-Footprinting/&quot;&gt;TheHarvester ile Footprinting&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[SSH Brute Force Attack via Metasploit]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/" />
+  <id>http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-12T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhabalar,
+Metasploit’teki scanner modülü ile SSH servere yapılan Brute Force saldırısı hakkında bir videolu anlatım yaptım.
+Ama önce bazı terimleri konunun yararı açısından incelememizde fayda var.&lt;/p&gt;
+
+&lt;h2 id=&quot;ssh-nedir&quot;&gt;SSH Nedir?&lt;/h2&gt;
+&lt;p&gt;SSH (Secure Shell) yani Güvenli Kabuk; makinalar arasındaki iletişimi,dosya transferini,
+uzak makinalarda komut çalıştırmayı sağlamak için geliştirilmiş güvenli iletşim protokolüdür.&lt;/p&gt;
+
+&lt;p&gt;Yani güvensiz kanallar üzerinden güvenli iletişim olanağı sağlar.&lt;/p&gt;
+
+&lt;p&gt;Özetle SSH bilgisayar-bilgisayar, bilgisayar-sunucu, sunucu-sunucu bağlantı çeşitleri içerisinde güvenli iletişimi sağlayan bir protokoldür.
+Tel-net ile açığa çıkan güvenlik problemlerinin önüne geçmek amacıyla geliştirilmiştir.&lt;/p&gt;
+
+&lt;h2 id=&quot;temel-ssh-unsurlar-nelerdir&quot;&gt;Temel SSH Unsurları Nelerdir?&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Authentication = Kimlik Denetimi&lt;/li&gt;
+  &lt;li&gt;Encryption = Şifreleme&lt;/li&gt;
+  &lt;li&gt;İntegrity = Bütünlük&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;SSH çalışma mantığı:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/ssh.jpg&quot; alt=&quot;SSH çalışma mantığı&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Eğer SSH şifreniz varsayılan olarak tanımlıysa,şifreyi değiştirmenizi tavsiye ederim.&lt;/p&gt;
+
+&lt;p&gt;Hemen bir Terminal(veya Konsol) açıp ;
+&lt;code&gt;passwd&lt;/code&gt; veya &lt;code&gt;passwd root&lt;/code&gt; komutunu verdikten sonra,
+Sizden yeni root şifrenizi girmeniz istenecektir.
+Bu şekilde root şifrenizi değiştirebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;Umarım SSH hakkında anlattığım temel bilgiler faydalı olmuştur.
+Şimdi Metasploit ile SSH Serverlarına nasıl Brute Force saldırısı yapılır inceleyelebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Video şeklinde anlatmayı tercih ettim daha çok faydalı olması için.
+İyi seyirler..&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/37900454&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/&quot;&gt;SSH Brute Force Attack via Metasploit&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Metagoofil Belge Toplama Aracı]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/" />
+  <id>http://fecassie.github.io/Metagoofil-Belge-Toplama-Aracı</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-12T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhabalar,&lt;/p&gt;
+
+&lt;p&gt;Bu gece Backtrack5 ile birlikte gelen bilgi toplama araçlarından biri olan Metagoofil isimli araçtan söz edeceğim.&lt;/p&gt;
+
+&lt;p&gt;Metagoofil,web sitelerinden belge toplamaya yarayan bir araçtır.İstenilen domain ve ona ait olan subdomainler içerisinde istenilen formattaki dosya tiplerini bulabilir.
+Belge araması yaparken Google arama motorunu kullanır.
+Word(.doc),Excel(.xls),Sunum Dosyaları(.pdf,.ppt,.odp) dosya formatlarını destekler.&lt;/p&gt;
+
+&lt;p&gt;Programı kullanmaya başlamadan önce bir terminal açıp şu komutu vermeliyiz :&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;apt-get install extract&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu işlemi belgelerin extract edilmesi için yapıyoruz.&lt;/p&gt;
+
+&lt;p&gt;Evet şimdide işimize yarayacak olan Metagoofil parametrelerinin ne anlama geldiğini inceleyelim:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;-d : Tarama yapılacak olan domain adı bu parametreyle girilir.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;/metagoofil.py -d hedefsite.com&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;-t : İndirilecek dosya formatını bu parametreyle belirtiyoruz.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./metagoofil.py -d hedefsite.com -t doc,pdf&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;-l : Tarama sonuçlarındaki limiti belirler.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./metagoofil.py -d hedefsite.com -t doc,pdf -l 100&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;-n : İndirilecek dosyaların limitini belirler.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./metagoofil.py -d hedefsite.com -t doc,pdf -l 100 -n 50&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;-o : Çalışma alanı.Yani toplanan belgelerin bir klasör altında toplanmasını sağlar.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./metagoofil.py -d hedefsite.com -t doc,pdf -l 100 -n 50 -o ferdogan&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;-f : Dosyanın çıktı formatını belirler.&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;./metagoofil.py -d hedefsite.com -t doc,pdf -l 100 -n 50 -o ferdogan -f fecassie.html&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Evet şimdi bütün bu bahsettiklerimizi videoda uygulayalım.İyi seyirler…&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/37350062&quot; width=&quot;500&quot; height=&quot;375&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/&quot;&gt;Metagoofil Belge Toplama Aracı&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Goohost İle Bilgi Toplama]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Goohost-%C4%B0le-Bilgi-Toplama/" />
+  <id>http://fecassie.github.io/Goohost-İle-Bilgi-Toplama</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-12T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Goohost,Google arama motoru kullanarak belirli bir DNS içindeki Host,Subdomain,IP Adresleri,e-postaları araştıran Backtrack5 altında bulunan basit bir araçtır.
+watakushi kod adlı yazar tarafından,Bash Script dili ile kodlanmıştır.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd /pentest/enumeration/google/goohost&lt;/code&gt; dizininden
+veya Uygulamalar menüsünden;
+&lt;code&gt;BackTrack &amp;gt; Vulnerability Assessment &amp;gt; Web Application Assessment &amp;gt; Web Open Source Assessment &amp;gt; goohost&lt;/code&gt; şeklinde programa ulaşabilirsiniz.
+Kullanımını videoda anlattım.İyi seyirler.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/45663778&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Goohost-%C4%B0le-Bilgi-Toplama/&quot;&gt;Goohost İle Bilgi Toplama&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[BT5-CUPP İle Wordlist Oluşturma]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/BT5-Cupp-%C4%B0le-Wordlist-Olu%C5%9Fturma/" />
+  <id>http://fecassie.github.io/BT5-Cupp-İle-Wordlist-Oluşturma</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-12T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;h1 id=&quot;cupp-common-user-passwords-profiler&quot;&gt;CUPP (Common User Passwords Profiler)&lt;/h1&gt;
+
+&lt;p&gt;Merhaba,&lt;/p&gt;
+
+&lt;p&gt;Bu konumda Backtrack5 içinde bulunan python dili ile kodlanmış CUPP programı ile “Interactive Wordlist” oluşturmayı anlatacağım.&lt;/p&gt;
+
+&lt;p&gt;Interaktif wordlist;ad soyad,takma ad,doğum günü,nickname vs. gibi anahtar kelimelerle oluiturulan wordlist dosyasıdır.&lt;/p&gt;
+
+&lt;p&gt;CUPP ile Wordlist Oluşturma’yı video şeklinde anlattım.
+İyi seyirler.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/46651568&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/BT5-Cupp-%C4%B0le-Wordlist-Olu%C5%9Fturma/&quot;&gt;BT5-CUPP İle Wordlist Oluşturma&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>

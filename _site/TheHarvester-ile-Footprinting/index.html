@@ -1,0 +1,293 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="tr"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>TheHarvester ile Footprinting &#8211; Fatih Erdoğan</title>
+<meta name="description" content="">
+<meta name="keywords" content="backtrack5, kali linux, linux, security, footprinting, theharvester">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="TheHarvester ile Footprinting">
+<meta name="twitter:description" content="">
+<meta name="twitter:site" content="@FeCassie">
+<meta name="twitter:creator" content="@FeCassie">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://fecassie.github.io/images/default-thumb.png">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TheHarvester ile Footprinting">
+<meta property="og:description" content="">
+<meta property="og:url" content="http://fecassie.github.io/TheHarvester-ile-Footprinting/">
+<meta property="og:site_name" content="Fatih Erdoğan">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-54768932-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+<link rel="canonical" href="http://fecassie.github.io/TheHarvester-ile-Footprinting/">
+<link href="http://fecassie.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Fatih Erdoğan Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://fecassie.github.io/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+	<script src="http://fecassie.github.io/assets/js/vendor/html5shiv.min.js"></script>
+	<script src="http://fecassie.github.io/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="http://fecassie.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://fecassie.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://fecassie.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://fecassie.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://fecassie.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://fecassie.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://fecassie.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+</head>
+
+<body class="post">
+
+<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+<div class="navigation-wrapper">
+	<div class="site-name">
+		<a href="http://fecassie.github.io">Fatih Erdoğan</a>
+	</div><!-- /.site-name -->
+	<div class="top-navigation">
+		<nav role="navigation" id="site-nav" class="nav">
+		    <ul>
+		        
+					    
+					        
+					    
+					    <li><a href="http://fecassie.github.io/about/" >About</a></li>
+					  
+					    
+					        
+					    
+					    <li><a href="http://fecassie.github.io/posts/" >Archive</a></li>
+					  
+		    </ul>
+		</nav>
+	</div><!-- /.top-navigation -->
+</div><!-- /.navigation-wrapper -->
+
+
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    
+  
+
+
+	<img src="http://fecassie.github.io/images/fatih_avatar.jpg" class="bio-photo" alt="Fatih Erdogan bio photo"></a>
+
+<h3>Fatih Erdogan</h3>
+<p>Güvenlik ve Linux meraklısı, özgür yazılımcı, bisiklet tutkunu uykusuz mühendis</p>
+
+<a href="http://twitter.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/f4tihErd0gan" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/fatiherdogan1" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/fat1herdogan" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+  </div>
+  <article>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://fecassie.github.io/TheHarvester-ile-Footprinting/" rel="bookmark" title="TheHarvester ile Footprinting">TheHarvester ile Footprinting</a></h1>
+      
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap">
+      <p>Merhaba,</p>
+
+<p>Backtrack ile hedef sistem hakkında bilgi toplamanın farklı araçlarla birçok yolu vardır.
+Daha önceki yazımda yine Backtrack içerisinde bulunan Metagoofil aracıyla hedef sistemden nasıl pdf,doc vs. gibi belge toplayabileceğimizi anlatmıştım.
+<a href="http://fecassie.github.io/Metagoofil-Belge-Toplama-Aracı/">Metagoofil ile Belge Toplama</a></p>
+
+<p>Şimdi ise belge değilde daha farklı bilgi edinme yöntemlerinden bahsedeceğim.
+Öncelikle bilgi toplamanın önemine biraz değinmek istiyorum.
+Hedef sistem hakkında bilgi toplamanın; zafiyet tespit etme,portların durumunu,firewall ları,çalışan işletim sistemlerini ve IPS denilen saldırı tespit sistemlerinin keşfedilmesi kadar önemli olduğunu düşünüyorum.</p>
+
+<p>Peki bunlardan farklı ne şekilde bilgi toplayabilirim?
+Hedef sistemdeki dökümantize edilmiş dosyaları bularak,hangi subdomainlerin hangi sanal host ların olduğunu tespit ederekte hedef sistem hakkında bilgi sahibi olabilirsiniz.
+Bu sayedede hedef sistem içindeki dosya akışı hakkında bilgi sahibi olabilirsiniz.
+Hedef sistemdeki kullanıcıların eposta adreslerini bularak,sisteme keşfettiğiniz eposta adreslerinden saldırmayı deneyebilirsiniz.
+Bu şekilde verilebilecek daha birçok örnek var..</p>
+
+<h2 id="theharvester-nedir">theHarvester nedir??</h2>
+
+<p>theHarvester; hedef sistemdeki Kullanıcı adlarını,Eposta hesaplarını,Hostname leri ve Subdomain leri bulup raporlayan bir araçtır.
+Bilgi toplarken aynı Metagoofil aracı gibi Google,Bing,Pgp,Linkedin gibi arama motorlarından yararlanır.
+Google,Bing ve Pgp Eposta,Hostname ve Subdomain bilgilerini bulurken Linkedin aracı sadece username bilgilerini bulmaktadır.</p>
+
+<h2 id="theharvester-nasl-kurabilirim">theHarvester’ı nasıl kurabilirim??</h2>
+
+<p>theHarvester’ı Linux sistemlere yüklemek için önce bir terminal(konsol) açıyoruz.Ardından aşağıdaki komutları yazıyoruz : </p>
+
+<p><code>wget https://theharvester.googlecode.com/files/theHarvester-ng-2.0.tar</code> = Bu komutla programın son sürümünü indiriyoruz.</p>
+
+<p><code>tar xvf theHarvester-ng-2.0.tar</code> = Bu komutla indirdiğimiz programı tar halinden çıkartıyoruz.</p>
+
+<p><code>cd theHarvester-ng-2.0.tar</code> = Programın kurulu olduğu dizine geçiyoruz.</p>
+
+<p><code>chmod +x theHarvester.py</code> = Programın sorunsuz çalışması için çalışma izni vermemiz gerekmekte.</p>
+
+<p><code>./theHarvester.py</code> = Bu komutlada programımızı çalıştırıyoruz.</p>
+
+<p>theHarvester kurulumunu Linux Mint12 üzerinde anlattım :</p>
+
+<iframe src="//player.vimeo.com/video/37825822" width="500" height="281" allowfullscreen=""></iframe>
+
+<h2 id="theharvester-kullanm">theHarvester kullanımı</h2>
+
+<p>Evet kurulumun ardından theHarvester aracının kullanımından bahsedelim.
+Kurulumu LinuxMint 12 üzerinde,Anlatımı ise Backtrack üzerinde yapıyoruz.</p>
+
+<ul>
+  <li>
+    <p>Bir Terminal açıyoruz.ve bu komutla theHarvester’ın olduğu dizine gidiyoruz.</p>
+
+    <p><code>cd /pentest/enumeration/theharvester</code></p>
+  </li>
+  <li>
+    <p>Daha sonra programımız açılıyor.
+Programın kullanımı çok basit.Genel arama komutu şu şekildedir :</p>
+
+    <p><code>./theHarvester.py -d yahoo.com -b google -l 600 -v</code></p>
+  </li>
+</ul>
+
+<p>Bu komutu kendinize göre düzenleyebilirsiniz.Zaten programın ana ekranındada örnekler mevcut.</p>
+
+<p>-d parametresi; hedef siteyi
+-b parametresi; kullanılacak arama motorunu
+-l parametresi; limit değerini
+-f parametresi; tarama sonucunu html veya xml olarak kaydetmeyi
+-v parametresi ise DNS çözümlemesini belirtir.</p>
+
+<p>Şimdi anlattıklarımızı video ile özetleyip konuyu noktalayalım.
+İyi seyirler.</p>
+
+<iframe src="//player.vimeo.com/video/37834893" width="500" height="281" allowfullscreen=""></iframe>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+  
+
+
+	<img src="http://fecassie.github.io/images/fatih_avatar.jpg" class="bio-photo" alt="Fatih Erdogan bio photo"></a>
+
+<h3>Fatih Erdogan</h3>
+<p>Güvenlik ve Linux meraklısı, özgür yazılımcı, bisiklet tutkunu uykusuz mühendis</p>
+
+<a href="http://twitter.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://facebook.com/f4tihErd0gan" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
+
+<a href="http://linkedin.com/in/fatiherdogan1" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+<a href="http://instagram.com/fat1herdogan" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
+
+<a href="http://github.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
+
+
+
+
+
+
+        </div>
+        <p class="byline"><strong>TheHarvester ile Footprinting</strong> was published on <time datetime="2014-09-12T00:00:00+03:00">September 12, 2014</time> and last modified on <time datetime="fatih_erdogan">fatih_erdogan</time>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'fatiherdogan'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrap">
+  <div class="related-articles">
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://fecassie.github.io/posts/">View all posts</a>)</small></h4>
+    <ul>
+    
+      <li><a href="http://fecassie.github.io/Linuxta-Dosya-Sifreleme/" title="Linux'ta Dosya Şifreleme">Linux'ta Dosya Şifreleme</a></li>
+    
+      <li><a href="http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/" title="SSH Brute Force Attack via Metasploit">SSH Brute Force Attack via Metasploit</a></li>
+    
+      <li><a href="http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/" title="Metagoofil Belge Toplama Aracı">Metagoofil Belge Toplama Aracı</a></li>
+    
+    </ul>
+    <hr />
+  </div><!-- /.related-articles -->
+  <footer>
+    
+
+<span>&copy; 2014 Fatih Erdoğan. I love Linux!</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://fecassie.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://fecassie.github.io/assets/js/scripts.min.js"></script>
+
+	        
+
+</body>
+</html>

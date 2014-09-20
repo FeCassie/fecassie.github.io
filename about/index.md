@@ -10,7 +10,7 @@ image:
 ---
 
 
-**Name:** Fatih Erdoğan
+	**Name:** Fatih Erdoğan
 
 
 **Education:** Sakarya University - Computer Engineering
@@ -19,7 +19,7 @@ image:
 **From:** Sakarya/Turkey
 
 
-**Interests:** Reverse Engineering, Malware Analysis, C/C++, Assembly
+**Interests:** Reverse Engineering, Malware Analysis, Linux System Administration
 
 
 **Jobs:** Linux & Open Source Development Researcher @ [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")

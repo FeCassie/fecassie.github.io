@@ -4,13 +4,68 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-09-25T23:58:27+03:00</updated>
+<updated>2014-09-26T00:26:06+03:00</updated>
 <id>http://fecassie.github.io/</id>
 <author>
   <name>Fatih Erdoğan</name>
   <uri>http://fecassie.github.io/</uri>
   
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Linux'ta DNS Değiştirmek]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek/" />
+  <id>http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-26T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+
+&lt;p&gt;Engellenmiş sitelere girmek için vs. DNS değiştirme,VPN veya proxy kullanımı gibi farklı yöntemler var.Bende sizlere linuxta kolay bir şekilde nasıl DNS değiştirildiğini göstermeye karar verdim.
+DNS ayarlarını yapmak için etc dizini altında bulunan resolv.conf isimli konfigürasyon dosyasının içeriğini değiştirmemiz gerekiyor.
+Default olarak dosyanın içinde şöyle bir şey yazması gerek:
+    &lt;code&gt;nameserver 127.0.0.1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu alanı kullanmak istediğiniz DNS değerlerine göre düzenlemeniz gerekiyor.Bunun için google dns veya opendns kullanabilirsiniz.
+Sık kullanımı açısından Google DNS ayarlamalarını kullanalım.
+Önce terminal ekranı açalım ve resolv.conf dosyasını root yetkisiyle açalım.Ben editör olarak vim kullanıyorum, sizde kolaylık açısından kullandığınız editörle düzenleyebilirsiniz. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`~$ sudo vim /etc/resolv.conf`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;İçindeki nameserver kısmında google dns’e göre düzenlemeyi aşağıdaki gibi yapalım:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`nameserver 8.8.8.8`
+`nameserver 8.8.4.4`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;OpenDNS ayarlarını kullanmak içinse:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`nameserver 208.67.222.222`
+`nameserver 208.67.220.220`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;şeklinde resolv.conf dosyasını düzenleyelim ve ayarları kaydedip editörü kapatalım.(vim’de :wq komutunu kullanabilirsiniz.)&lt;/p&gt;
+
+&lt;p&gt;Fakat bu ayarlamalar tek kullanımlık oluyor.Yani siz linux sisteminizi yeniden başlattığınızda DNS ayarları tekrar eski haline dönecektir.
+Bunun kalıcı olması için:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;`chattr +i /etc/resolv.conf`
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Son olarak bu komutla da yaptığımız ayarlar kalıcı hale geldi.
+&lt;strong&gt;FeCassie&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek/&quot;&gt;Linux'ta DNS Değiştirmek&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 26, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   

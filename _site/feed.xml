@@ -4,13 +4,155 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-09-26T00:44:38+03:00</updated>
+<updated>2014-09-27T00:08:20+03:00</updated>
 <id>http://fecassie.github.io/</id>
 <author>
   <name>Fatih Erdoğan</name>
   <uri>http://fecassie.github.io/</uri>
   
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Github Kurulumu ve Kullanımı(Başlangıç)]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Temel-Github-Kullanimi/" />
+  <id>http://fecassie.github.io/linux/Temel-Github-Kullanimi</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-09-27T00:00:00+03:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhabalar,
+Birkaç arkadaşamın da isteğiyle bugün Github kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kuruulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.&lt;/p&gt;
+
+&lt;p&gt;Neyse fazla uzatmadan başlayalım…&lt;/p&gt;
+
+&lt;h2 id=&quot;terimler&quot;&gt;Terimler&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;font color=&quot;red&quot;&gt;repository (kod deposu): &lt;/font&gt;
+    &lt;p&gt;Tüm kodlarımızın barındırıldığı depoya verilen genel isim.Proje dizininizde git init komutu çalıştırılarak o dizinde bir repository oluşturabilirsiniz.Birazdan hepsine değineceğiz.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;font color=&quot;red&quot;&gt;commit (taahhüt): &lt;/font&gt;
+    &lt;p&gt;Bir dosyada yaptığınız değişikliklerin kalıcı olması için gereken taahhüt.Böylece dosyada yaptığınız değişiklikler repository’nize kaydedilir.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;kurulum-ve-yaplandrma&quot;&gt;Kurulum ve Yapılandırma&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;İlk olarak &lt;a href=&quot;http://github.com/&quot;&gt;github.com&lt;/a&gt;‘a üye olup kendi hesabınızı açmak gerekmekte.Bu kısımda çok zorlanılmayacağını düşündüğüm için çok üstünde durmadan geçiyorum.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Terminal ekranı açalım ve aşağıdaki komutu yazalım.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;sudo apt-get install git-core curl&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Bu komutla github’ı linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Yine aşağıdaki komutları terminalden kendinize göre düzenleyerek sırayla girin.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;git config --global user.name &quot;FeCassie&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git config --global user.email fatiherdogan94@gmail.com&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git1.png&quot; alt=&quot;ilk adım&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Bu adımda kendi bilgisayarımızı Github’a tanıtmak için ssh anahtarı oluşturuyoruz.Oluşturduğumuz ssh anahtarlarından id_rsa.pub olanı github’da tanıtarak bu adımı da halletmiş oluyoruz.
+İlk adımda sorulan soruyu enter’a basarak geçin.Sonrasında bizden parola isteyecek.Bu alanı uygun parolayla doldurun.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;ssh-keygen&lt;/code&gt; komutuyla ssh anahtarını oluşturuyoruz.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ardından oluşturduğumuz ssh anahtarını kopyalayalım&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code&gt;cd ~&lt;/code&gt; komutu ile home dizinine geçiş yapalım.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code&gt;gedit .ssh/id_rsa.pub&lt;/code&gt; komutu ile dosyayı açın ve tümünü seçip kopyalayın.&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git2.png&quot; alt=&quot;id_rsa&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Evet şimdi kopyaladığımız key’i github hesabımıza ekleyelim. “settings” butonuna tıklayın, sonra SSH keys bölümüne girin, daha sonra “Add SSH key” butonuna basarak aşağıda gösterdiğim gibi ssh anahtarınızı ilgili alana kopyalayın.Ardından “Add key” butonuna tıklayarak işlemi tamamlayın.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git3.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;depo-oluturmak-ve-dosya-gndermek&quot;&gt;Depo Oluşturmak ve Dosya Göndermek&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Öncelikle depo oluşturmak için Github’ta Repositories kısmından New butonuna tıklayarak istediğiniz depo ismini girin ve Create repository butonuna tıklayın.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git4.png&quot; alt=&quot;git&quot; /&gt;	&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Daha sonra terminalden:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;mkdir ferdogan&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;cd ferdogan&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git init&lt;/code&gt; komutu ile .git dosyalarını oluşturalım.&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;touch README.md&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git add README.md&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git commit -m &quot;ilk&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git remote add origin git@github.com:FeCassie/ferdogan.git&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git5.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Evet şimdi depomuza ilk dosyamızı eklemek için aşağıdakileri yapalım.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code&gt;cd ferdogan&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;ls&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;vim mini_program.py&lt;/code&gt;  siz gedit editörünü de kullanabilirsiniz.&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git add mini_program.py&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git commit -a -m &quot;ilk programım&quot;&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git6.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Şimdi hesabınızdan Repositories kısmına gelerek depomuzun oluştuğunu ve içinde minik programımızın olduğunu görebilirsiniz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git7.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git8.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Evet bir yazının daha sonuna geldik.Elimden geldiği kadarıyla github kurulumunu, depo oluşturup içine dosya veya projelerimizi göndermeyi anlatmaya çalıştım.Temel seviyede olması nedeniyle depo klonlama, ekip çalışması, pull&amp;amp;push gibi konulara değinmedim.Belki bir başka yazıda o konulara da değinebilirim.&lt;/p&gt;
+
+&lt;p&gt;Umarım faydalı olmuştur.Bir başka yazıda görüşmek üzere…&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Temel-Github-Kullanimi/&quot;&gt;Github Kurulumu ve Kullanımı(Başlangıç)&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 27, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   

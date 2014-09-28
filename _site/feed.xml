@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-09-27T00:08:20+03:00</updated>
+<updated>2014-09-28T23:38:35+03:00</updated>
 <id>http://fecassie.github.io/</id>
 <author>
   <name>Fatih Erdoğan</name>
@@ -16,7 +16,7 @@
   
 
 <entry>
-  <title type="html"><![CDATA[Github Kurulumu ve Kullanımı(Başlangıç)]]></title>
+  <title type="html"><![CDATA[Git Kurulumu ve Kullanımı(Başlangıç)]]></title>
   <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Temel-Github-Kullanimi/" />
   <id>http://fecassie.github.io/linux/Temel-Github-Kullanimi</id>
   <updated>fatih_erdoganT00:00:00-00:00</updated>
@@ -28,7 +28,7 @@
     
   </author>
   <content type="html">&lt;p&gt;Merhabalar,
-Birkaç arkadaşamın da isteğiyle bugün Github kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kuruulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.&lt;/p&gt;
+Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.&lt;/p&gt;
 
 &lt;p&gt;Neyse fazla uzatmadan başlayalım…&lt;/p&gt;
 
@@ -55,7 +55,7 @@ Birkaç arkadaşamın da isteğiyle bugün Github kurulumu ve temel kullanımı 
       &lt;li&gt;&lt;code&gt;sudo apt-get install git-core curl&lt;/code&gt;&lt;/li&gt;
     &lt;/ul&gt;
 
-    &lt;p&gt;Bu komutla github’ı linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.&lt;/p&gt;
+    &lt;p&gt;Bu komutla git’i linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;Yine aşağıdaki komutları terminalden kendinize göre düzenleyerek sırayla girin.
     &lt;ul&gt;
@@ -151,7 +151,7 @@ Birkaç arkadaşamın da isteğiyle bugün Github kurulumu ve temel kullanımı 
 &lt;p&gt;Umarım faydalı olmuştur.Bir başka yazıda görüşmek üzere…&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Temel-Github-Kullanimi/&quot;&gt;Github Kurulumu ve Kullanımı(Başlangıç)&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 27, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Temel-Github-Kullanimi/&quot;&gt;Git Kurulumu ve Kullanımı(Başlangıç)&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 27, 2014.&lt;/p&gt;</content>
 </entry>
 
 

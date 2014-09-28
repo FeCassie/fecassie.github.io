@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Github Kurulumu ve Kullanımı(Başlangıç)"
+title: "Git Kurulumu ve Kullanımı(Başlangıç)"
 author: fatih_erdogan
 modified: fatih_erdogan
 excerpt: ""
@@ -8,7 +8,7 @@ tags: [linux,github]
 categories: Linux
 ---
 Merhabalar,
-Birkaç arkadaşamın da isteğiyle bugün Github kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kuruulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.
+Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.
 
 Neyse fazla uzatmadan başlayalım...
 
@@ -24,7 +24,7 @@ Neyse fazla uzatmadan başlayalım...
 * Terminal ekranı açalım ve aşağıdaki komutu yazalım.
 	* `sudo apt-get install git-core curl`
 
-  Bu komutla github'ı linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.
+  Bu komutla git'i linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.
 
 * Yine aşağıdaki komutları terminalden kendinize göre düzenleyerek sırayla girin.
 	* `git config --global user.name "FeCassie"`

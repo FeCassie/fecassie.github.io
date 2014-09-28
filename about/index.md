@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About the Fatih Erdogan
+title: About Fatih ERDOGAN
 tags: [about, Jekyll, Fatih Erdogan]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
@@ -9,7 +9,7 @@ image:
   credit: fatih@FeCassie:~$
 ---
 
-**Name:** Fatih Erdoğan
+**Name:** Fatih ERDOGAN
 
 
 **Education:** Sakarya University - Computer Engineering

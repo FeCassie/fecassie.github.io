@@ -18,7 +18,9 @@ image:
 **From:** Sakarya/Turkey
 
 
-**Interests:** Reverse Engineering, Malware Analysis, Linux System Administration
+**Interests:** Reverse Engineering, Malware Analysis, Penetration Testing
 
+**Hobbies:** Linux, Programming, Arduino, Geometry
 
-**Jobs:** Linux & Open Source Development Researcher @ [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")
+**Jobs:** 
+	* Linux & Open Source Development Researcher @ [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")

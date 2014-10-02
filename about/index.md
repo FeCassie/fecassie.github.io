@@ -14,19 +14,15 @@ image:
 
 **Education:** Sakarya University - Computer Engineering
 
-
-**From:** Sakarya/Turkey
-
-
 **Interests:** Reverse Engineering, Malware Analysis, Penetration Testing
 
-**Hobbies:** Linux, Programming, Arduino, Geometry
+**Hobbies:** Linux, Programming, Arduino, Geometry, Biking
 
 **Jobs:** 
 
-*Sakarya University Developer Community [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")
+* Sakarya University Developer Community [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")
 
-*Sakarya University Cyber Security Community - Malware Analysis and Penetration Testing Team Member
+* Sakarya University Cyber Security Community - Malware Analysis and Penetration Testing Team Member
 
-*Sakarya University Computer Society Team Member
+* Sakarya University Computer Society Team Member
 

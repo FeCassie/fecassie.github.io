@@ -21,5 +21,5 @@ image:
 **Jobs&Activities:** 
 
 * Sakarya University Developer Community [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO")
-* Sakarya University Cyber Security Community - Malware Analysis and Penetration Testing Team Member
+* Sakarya University Cyber Security Community - Malware Analysis Group Member
 * Sakarya University Computer Society Team Member

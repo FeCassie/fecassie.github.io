@@ -45,5 +45,5 @@ Sisteminizde openssl'in hangi versiyonda çalıştığını öğrenmek için `~$
 Görüldüğü üzere linux'ta dosyalar bu şekilde şifreleniyor ve şifreleri çözülebiliyor.Tabi bunların hepsini yaparken bir anahtar belirlememiz, çözerken de o anahtarı bilmemiz şart.
 Bir başka yazıda görüşmek üzere..
 
-<font color="red">fatih@FeCassie:~$</font>
+[Fatih ERDOGAN](http://ferdogan.net) ([@FeCassie](https://twitter.com/FeCassie))
 

@@ -4,7 +4,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-11-06T10:44:48+02:00</updated>
+<updated>2014-11-06T10:51:44+02:00</updated>
 <id>http://fecassie.github.io/</id>
 <author>
   <name>Fatih Erdoğan</name>
@@ -151,6 +151,14 @@ Başlıca iki analiz yöntemi vardır: online ve offline.Şimdi bunları inceley
 
 &lt;h1 id=&quot;jsunpack&quot;&gt;Jsunpack&lt;/h1&gt;
 
+&lt;p&gt;&lt;a href=&quot;http://jsunpack.jeek.org/&quot;&gt;Jsunpack&lt;/a&gt; adresinden sisteme ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;malicios ile başlayan ilk iki satır, zafiyet hakkında bilgi vermekte.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on4.png&quot; alt=&quot;on4&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;offline-pdf-analiz-aralar&quot;&gt;Offline PDF Analiz Araçları&lt;/h2&gt;
 
 &lt;h1 id=&quot;peepdf&quot;&gt;Peepdf&lt;/h1&gt;
@@ -234,7 +242,7 @@ Varolan PDF dosyalarına zararlı kod enjekte etmek için de kullanılabilir.Yak
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Refersans:
+&lt;p&gt;Referans:
 infosecinstitute&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Fatih ERDOGAN&lt;/strong&gt;

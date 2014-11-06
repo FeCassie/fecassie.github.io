@@ -4,13 +4,245 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-10-30T10:05:17+02:00</updated>
+<updated>2014-11-06T10:44:48+02:00</updated>
 <id>http://fecassie.github.io/</id>
 <author>
   <name>Fatih Erdoğan</name>
   <uri>http://fecassie.github.io/</uri>
   
 </author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[PDF Malware Analiz Teknikleri]]></title>
+  <link rel="alternate" type="text/html" href="http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri/" />
+  <id>http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri</id>
+  <updated>fatih_erdoganT00:00:00-00:00</updated>
+  <published>2014-11-06T00:00:00+02:00</published>
+  
+  <author>
+    <name>Fatih Erdogan</name>
+    <uri>http://fecassie.github.io</uri>
+    
+  </author>
+  <content type="html">&lt;p&gt;Merhabalar,
+Bugün sizlere benim de şu sıralar yeni yeni adım atmakta olduğum tersine mühendislik ve zararlı yazılım analiziyle alakalı, bana ilgi çekici gelen bir konudan bahsetmek istiyorum.”PDF Malware Analizi”.&lt;/p&gt;
+
+&lt;p&gt;Bilindiği üzere PDF dosyalarını günlük yaşantımızda, işte, evde çoğu yerde kullanıyoruz.Bu PDFler olmadan iş yaşantısını hayal etmek bile oldukça zor aslında.Çünkü kurumsal/bireysel belgeler, şirket broşürleri ve hatta davetiyeler bile çoğu zaman PDF formatında tutuluyor.&lt;/p&gt;
+
+&lt;p&gt;Geçtiğimiz yıllarda PDF dosyalarıyla ilgili buffer overflow gibi zafiyetler yayınlandı ve bu zafiyetlere yönelik saldırılar oluşmaya başladı.Hatta saldırıların birçoğunun internet üzerinde, içinde zararlı kod bulunduran PDF dosyalarının sisteme indirilmesiyle veya bu PDF dosyalarının sosyal mühendislik yöntemleri kullanılarak sistemlere kullanıcının anlamayacağı bir şekilde yerleştirilerek gerçekleştirildiği görüldü.&lt;/p&gt;
+
+&lt;p&gt;Sadece PDF dosyasını açmak gibi basit bir hareket bile internetten gelen zararlı kodun sisteme bulaşmasını sağlayacak bir güvenlik ihlali yaratabilir.Kullanıcının anlamaması için sahte bir PDF dosyası şekline bürünerek kullanıcıyı kandırabilir.&lt;/p&gt;
+
+&lt;p&gt;Bu konuyla ilgili aşağıdaki resimde geçtiğimiz yıllardaki Adobe Reader saldırılarının yüzdelik artışını görebilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z1.png&quot; alt=&quot;Adobe Reader Saldırıları&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zararlı PDF dosyaları demin bahsettiğim nedenlerin de etkisiyle sıklıkla kitlesel ölçekli bilgisayar saldırılarının bir parçası olarak kullanılır.&lt;/p&gt;
+
+&lt;p&gt;PDF dosyalarını analiz etmeyi bilmek iyi güzel fakat analizi yapacak kişinin PDF dosya yapısı hakkında önceden bilgisinin olması her halükarda daha olumludur.
+Öyleyse şimdi bizde PDF dosya yapısını inceleyelim…&lt;/p&gt;
+
+&lt;h2 id=&quot;pdf-dosya-yaps&quot;&gt;PDF Dosya Yapısı&lt;/h2&gt;
+
+&lt;p&gt;PDF, statik ve dinamik zengin içerik sunma yeteneğine sahiptir.PDF dosyalarıyla görsel olarak ilgi çekici, interaktif ve taşınabilir belgeler sunabilirsiniz.Her ne kadar bu geniş özellik ve imkanlardan yararlanıyor olsak bile işin bir karanlık tarafı vardır.Az önce bahsettiğimiz dinamik pdf özellikleri, zararlı kodları barındırabilecek şekilde kullanılmıştır.&lt;/p&gt;
+
+&lt;p&gt;Önceki yıllarda bilgisayar korsanlarının bu tarz kötü niyetli dosyaları, zararlı kod barındıran kötü amaçlı yazılımları yüklemek ve kullanıcıların kimlik bilgilerini çalmak için kullandığı ortaya çıkmıştır.&lt;/p&gt;
+
+&lt;p&gt;Normalde PDF zararlı yazılımları, bu dosyaların içine gömülen bir script sayesinde çalışmakta.Bu zararlı script PDF dosyasının çalışmasını destekleyen bir yapıya sahiptir.Bu amaca yönelik en yaygın kullanılan script dili JavaScript’tir.&lt;/p&gt;
+
+&lt;p&gt;Çoğu durumda bu gömülü scriptler işlevselliği sağlamak veya işletim sistemine zararlı kod yüklemek için kullanılır.&lt;/p&gt;
+
+&lt;h1 id=&quot;pdf-dkman-yaps&quot;&gt;PDF Döküman Yapısı&lt;/h1&gt;
+
+&lt;p&gt;Bir PDF dosyasının genel yapısı aşağıdaki bileşenlerden oluşur:
+	* Boolean values, representing true or false
+	* Numbers
+	* Strings
+	* Names
+	* Arrays, ordered collections of objects
+	* Dictionaries, collections of objects indexed by names
+	* Streams, usually containing large amounts of data
+	* The null object&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z2.png&quot; alt=&quot;PDF Dosya YApısı&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;zararl-yazlmn-pdf-ile-almas&quot;&gt;Zararlı Yazılımın PDF ile Çalışması&lt;/h2&gt;
+
+&lt;p&gt;Çalıştırma işlemi sırasında zararlı bir uygulama açılır ya da bir belgeye veri yazdırır.
+Biz bu işlemi Adobe Acrobat exploitini Metasploit ile PDF içine .exe dosyası gömerek yapıyoruz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zararlı PDF’in çalışması esnasında cmd’de aşağıdaki eylemleri uygulayarak açılacaktır.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z3.png&quot; alt=&quot;cmd&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Genellikle PDF içine JavaScript kullanarak zararlı yazılım gömülerek bu işlem yapılıyor, çünkü JavaScript heap spray gibi tekniklerle exploit etme yöntemlerinde sıkça kullanılır.&lt;/p&gt;
+
+&lt;p&gt;Herhangi bir kötü niyetli PDF dosyasını açtığınızda ilk olarak JavaScript kodu yürütülecek ve exploit edilecektir.Daha sonra shellcode yürütülür ve Trojan .exe çalışacaktır.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z3.png&quot; alt=&quot;execute&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;metasploit-ile-zararl-pdf-dosyas-oluturma&quot;&gt;Metasploit ile Zararlı PDF Dosyası Oluşturma&lt;/h2&gt;
+
+&lt;p&gt;Şimdi Adobe Reader “util.printf()” JavaScript fonksiyonundaki stack buffer overflow zafiyetini kullanarak kendi zararlı PDF dosyamızı oluşturalım.Adobe Reader, genellikle stack-based-buffer-overflow zafiyetine meyilliymiş bende bunu yeni öğrendim…&lt;/p&gt;
+
+&lt;p&gt;Herneyse şimdi zararlı PDF’i Metasploit kullanarak adım adım oluşturalım:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;msfconsole’u açıp aşağıdaki komutları uygulayın.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw1.png&quot; alt=&quot;mw1&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gerekli ayarlamaları yaptıktan sonra &lt;code&gt;exploit&lt;/code&gt; komutuyla zararlı PDF dosyamızı /root/.msf4/local/zararlipdf.pdf dizininde bulabilirsiniz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw2.png&quot; alt=&quot;mw2&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;İşte badboy karşımızda :)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw3.png&quot; alt=&quot;mw3&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zararlı PDF dosyasını göndermeden önce, reverse connection sağlamak için listener aktif etmemiz lazım.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw4.png&quot; alt=&quot;mw4&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;PDF dosyası açıldığında metasploit tarafından bize session yani bir oturum açılacaktır.Meterpreter kullanarak sisteme erişim sağlamış olduk böylece.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zararlı PDF’i Analiz Etme Yöntemleri
+Başlıca iki analiz yöntemi vardır: online ve offline.Şimdi bunları inceleyelim.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;online-pdf-analiz-aralar&quot;&gt;Online PDF Analiz Araçları&lt;/h2&gt;
+
+&lt;p&gt;Online PDF Analiz araçları çoğu zaman işleri daha da kolaylaştırıyor.Siteye upload edip analizden sonra raporları inceleyerek gerekli bilgiyi edinebiliriz.&lt;/p&gt;
+
+&lt;h1 id=&quot;wepawet&quot;&gt;Wepawet&lt;/h1&gt;
+
+&lt;p&gt;Wepawet Flash, JavaScript ve PDF dosyalarını analiz eden web tabanlı online malware tarayıcısı.&lt;a href=&quot;http://wepawet.iseclab.org/&quot;&gt;Wepawet&lt;/a&gt; bağlantısından inceleyebilirsiniz.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PDF dosyası Detector-Result sonucununda “suspicious” yani şüpheli olarak görünüyor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on1.png&quot; alt=&quot;on1&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Exploit metodu “util.printf” ve shellcode..&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on2.png&quot; alt=&quot;on2&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;pdf-examiner&quot;&gt;PDF Examiner&lt;/h1&gt;
+
+&lt;p&gt;Kırmızı yazılı alanda analiz sonuçları belirtilmekte.&lt;a href=&quot;http://www.malwaretracker.com/&quot;&gt;PDF Examiner&lt;/a&gt; adresinden ulaşabilirsiniz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on3.png&quot; alt=&quot;on3&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jsunpack&quot;&gt;Jsunpack&lt;/h1&gt;
+
+&lt;h2 id=&quot;offline-pdf-analiz-aralar&quot;&gt;Offline PDF Analiz Araçları&lt;/h2&gt;
+
+&lt;h1 id=&quot;peepdf&quot;&gt;Peepdf&lt;/h1&gt;
+
+&lt;p&gt;Peepdf, PDF dosyalarının zararlı olup olmadığını öğrenmek ve incelemek amacıyla python dilinde geliştirilen bir araçtır.
+Peepdf’in güzel yanı, görevleri gerçekleştirmek için başka araçlara ihtiyacı olmaması, pdf analizi için gerekebilecek bileşenleri kendi içinde barındırması.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Şimdi adım adım inceleyelim…&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw5.png&quot; alt=&quot;mw5&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw6.png&quot; alt=&quot;mw6&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw7.png&quot; alt=&quot;mw7&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw8.png&quot; alt=&quot;mw8&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;pdfid&quot;&gt;Pdfid&lt;/h1&gt;
+
+&lt;p&gt;Pdfid, bir PDF dosyasından kullanışlı bilgiler elde etmenizi sağlayan bir araçtır.Peepdf gibi Pdfid’de python ile geliştirilmiştir.&lt;/p&gt;
+
+&lt;p&gt;Analiz edilen pdf dosyasından javascript, obj, endobj, stream gibi headerları çıkarabilir.Bazı PDF exploitleri bu tarz headerları değiştirebilir, pdfid pdf içinde neler olduğunu tam anlamıyla gösterebilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw9.png&quot; alt=&quot;mw9&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;origami&quot;&gt;Origami&lt;/h1&gt;
+
+&lt;p&gt;Origami, PDF dosyalarını parse, analiz ve forge etmek amacıyla kullanılan bir Ruby frameworktür.
+Varolan PDF dosyalarına zararlı kod enjekte etmek için de kullanılabilir.Yakın zamanda Origami ile ilgili daha ayrıntılı bir yazı yazmayı düşündüğümden, şu an ayrıntılı olarak incelemiyorum.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ekran görüntüsü şu şekilde:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of2.png&quot; alt=&quot;of2&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;pdf-stream-dumper&quot;&gt;PDF Stream Dumper&lt;/h1&gt;
+
+&lt;p&gt;Bu programla ilgili varolan kaynaklardan aldığım ekran görüntülerini incelemenin yeterli olduğunu düşünüyorum.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of3.png&quot; alt=&quot;of3&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of4.png&quot; alt=&quot;of4&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of6.png&quot; alt=&quot;of6&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;nasl-korunabilirim&quot;&gt;Nasıl Korunabilirim??&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Otomatik güncelleştirmeleri aktif edin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;PDF dosyasının browser ile entegre çalışmasını engelleyin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tüm Adobe ürünlerinin son patch ve update sürümlerini kullanın.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;JavaScript’i deaktif edin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;“Allow non-PDF file attachments with external applications” tarzı mesaj seçeneklerini işaretlemeyin.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Alternatif PDF araçlarını kullanın.Foxit Reader, Sumatra, PDF XChange.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Refersans:
+infosecinstitute&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fatih ERDOGAN&lt;/strong&gt;
+@FeCassie&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri/&quot;&gt;PDF Malware Analiz Teknikleri&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on November 06, 2014.&lt;/p&gt;</content>
+</entry>
 
 
   

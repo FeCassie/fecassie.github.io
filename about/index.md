@@ -14,13 +14,14 @@ image:
 
 **Education:** Sakarya University - Computer Engineering
 
+**Job:** Assistant Engineer at SaüSEM
+
 **Interests:** Reverse Engineering, Malware Analysis, Penetration Testing
 
 **Hobbies:** Linux, RaspberryPi, Geometry, Drums, Biking
 
-**Jobs&Activities:** 
+**Activities:** 
 
-* Sakarya University Continuing Education Center - Assistant Engineer
 * Sakarya University Cyber Security Community - System Security Group Board Member
 * SuperBug InfoSec Community - Team Member
 * Sakarya University Developer Community [Mavidurak-IO](http://mavidurak.github.io "Mavidurak-IO") - Board Member

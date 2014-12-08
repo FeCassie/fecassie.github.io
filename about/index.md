@@ -5,7 +5,7 @@ tags: [about, Jekyll, Fatih Erdogan]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 image: 
-  feature: ![FeCassie]({{ site.url }}/assets/back.jpg)
+  feature: back.jpg
   credit: fatih@FeCassie:~$
 ---
 

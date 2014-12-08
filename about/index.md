@@ -4,7 +4,8 @@ title: About Fatih ERDOGAN
 tags: [about, Jekyll, Fatih Erdogan]
 modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
-image: ![FeCassie]({{ site.url }}/assets/back.jpg)  feature:
+image: 
+  feature: ![FeCassie]({{ site.url }}/assets/back.jpg)
   credit: fatih@FeCassie:~$
 ---
 

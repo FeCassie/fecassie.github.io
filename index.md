@@ -1,6 +1,6 @@
 ---
 layout: home
-excerpt: "Fatih Erdogan - Personal Blog"
+excerpt: "Fatih Erdogan - FeCassie"
 tags: [Jekyll, theme, responsive, blog, template]
 
 ---

@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Fatih Erdoğan
+title:            Fatih Erdoğan - FeCassie
 locale:           en_US
 url:              http://fecassie.github.io
 
@@ -26,7 +26,7 @@ kramdown:
 
 # Site owner
 owner:
-  name: Fatih Erdoğan
+  name: Fatih Erdoğan - FeCassie
   avatar: fecassie.jpg
   bio: "security researcher adayı"
   email: 

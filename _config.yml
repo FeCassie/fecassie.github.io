@@ -2,32 +2,32 @@
 
 # Site Settings
 title: 						"Fatih Erdogan"
-email: 						"ben@benmurray.us"
-description: 				"falan da filan Amigdala da Amigdala"
+email: 						"fatiherdogan94@gmail.com"
+description: 				"security researcher adayı"
 baseurl: 					""
 url: 						"http://ferdogan.net"
-logourl: 					"/assets/img/bloglogo.jpg"		
+logourl: 					"/assets/img/authorimage.jpg"		
 fa-logo: 					"fa-terminal"
 paginate: 					5
 locale:           			tr_TR
 
 
 # Author Settings
-author_name: 				"Fatih"
+author_name: 				"Fatih Erdogan"
 author_url: 				"http://ferdogan.net"
-author_bio: 				"Ben Murray is a digital advocacy strategist in Washington, D.C."
-author_email: 				"ben@benmurray.us"
+author_bio: 				"security researcher adayı"
+author_email: 				"fatiherdogan94@gmail.com"
 author_image: 				"/assets/img/authorimage.jpg"
 
 
 # Social Settings
-twitter_url: 				"http://twitter.com/fecassie"
+twitter_url: 				"http://twitter.com/FeCassie"
 facebook_url: 				"http://facebook.com/fatiherdogananana"
 github_url:  				""
 youtube_url:  				""
 dribbble_url:  				""
 googleplus_url: 			"http://plus.google.com/+BenMurrayUS"
-instagram_url:  			"http://instagram.com/bnmry"
+instagram_url:  			"http://instagram.com/fat1herdogan"
 pinterest_url:  			""
 linkedin_url:  				"http://linkedin.com/in/benmurray/"
 

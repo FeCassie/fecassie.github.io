@@ -1,62 +1,55 @@
-# Site wide configuration
-
-title:            Fatih Erdoğan - FeCassie
-locale:           en_US
-url:              http://fecassie.github.io
 
 
-# Jekyll configuration
+# Site Settings
+title: 						"Fatih Erdogan"
+email: 						"ben@benmurray.us"
+description: 				"falan da filan Amigdala da Amigdala"
+baseurl: 					""
+url: 						"http://ferdogan.net"
+logourl: 					"/assets/img/bloglogo.jpg"		
+fa-logo: 					"fa-terminal"
+paginate: 					5
+locale:           			tr_TR
 
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
+
+# Author Settings
+author_name: 				"Fatih"
+author_url: 				"http://ferdogan.net"
+author_bio: 				"Ben Murray is a digital advocacy strategist in Washington, D.C."
+author_email: 				"ben@benmurray.us"
+author_image: 				"/assets/img/authorimage.jpg"
+
+
+# Social Settings
+twitter_url: 				"http://twitter.com/fecassie"
+facebook_url: 				"http://facebook.com/fatiherdogananana"
+github_url:  				""
+youtube_url:  				""
+dribbble_url:  				""
+googleplus_url: 			"http://plus.google.com/+BenMurrayUS"
+instagram_url:  			"http://instagram.com/bnmry"
+pinterest_url:  			""
+linkedin_url:  				"http://linkedin.com/in/benmurray/"
+
+
+# Theme Settings
+theme_disqus_shortname: 	"fatiherdogan"
+theme_google_comments: 		false
+theme_analytics_id: 		""
+#theme_analytics_domain: 	"ecko.me"
+theme_reading_time: 		true
+theme_autoload_comments: 	true
+theme_always_show_nav: 		false
+
+
+# SASS Settings
+# DO NOT MODIFY
 sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
+ sass_dir: "assets/css/"
+ style: :compressed
 
 
-# Site owner
-owner:
-  name: Fatih Erdoğan
-  avatar: fecassie.jpg
-  bio: "security researcher adayı"
-  email: 
-  disqus-shortname: fatiherdogan 
-  twitter: FeCassie
-  facebook: f4tihErd0gan
-  google:
-    plus: #username
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
-  github: FeCassie
-  stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: fatiherdogan1
-  instagram: fat1herdogan
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
+# Build Settings
+markdown: 					kramdown
+permalink: 					pretty
 
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-
-author.github: FeCassie
-author.stackoverflow: #http://stackoverflow.com/users/123456/username
-author.linkedin: fatiherdogan1
-author.instagram: fat1herdogan
-author.twitter: FeCassie
-author.facebook: f4tihErd0gan

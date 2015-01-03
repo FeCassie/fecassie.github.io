@@ -1,33 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-<title type="text">Fatih Erdoğan</title>
-<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://fecassie.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="http://fecassie.github.io" />
-<updated>2014-11-06T10:55:02+02:00</updated>
-<id>http://fecassie.github.io/</id>
-<author>
-  <name>Fatih Erdoğan</name>
-  <uri>http://fecassie.github.io/</uri>
-  
-</author>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[PDF Malware Analiz Teknikleri]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri/" />
-  <id>http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-11-06T00:00:00+02:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhabalar,
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Fatih Erdogan</title>
+        <description>falan da filan Amigdala da Amigdala</description>
+        <link>http://ferdogan.net/</link>
+        <atom:link href="http://ferdogan.net/feed.xml" rel="self" type="application/rss+xml" />
+        <pubDate>Sun, 04 Jan 2015 00:30:39 +0200</pubDate>
+        <lastBuildDate>Sun, 04 Jan 2015 00:30:39 +0200</lastBuildDate>
+        <generator>Jekyll v2.5.3</generator>
+        
+            <item>
+                <title>PDF Malware Analiz Teknikleri</title>
+                <description>&lt;p&gt;Merhabalar,
 Bugün sizlere benim de şu sıralar yeni yeni adım atmakta olduğum tersine mühendislik ve zararlı yazılım analiziyle alakalı, bana ilgi çekici gelen bir konudan bahsetmek istiyorum.”PDF Malware Analizi”.&lt;/p&gt;
 
 &lt;p&gt;Bilindiği üzere PDF dosyalarını günlük yaşantımızda, işte, evde çoğu yerde kullanıyoruz.Bu PDFler olmadan iş yaşantısını hayal etmek bile oldukça zor aslında.Çünkü kurumsal/bireysel belgeler, şirket broşürleri ve hatta davetiyeler bile çoğu zaman PDF formatında tutuluyor.&lt;/p&gt;
@@ -38,7 +22,7 @@ Bugün sizlere benim de şu sıralar yeni yeni adım atmakta olduğum tersine m�
 
 &lt;p&gt;Bu konuyla ilgili aşağıdaki resimde geçtiğimiz yıllardaki Adobe Reader saldırılarının yüzdelik artışını görebilirsiniz.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z1.png&quot; alt=&quot;Adobe Reader Saldırıları&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/z1.png&quot; alt=&quot;Adobe Reader Saldırıları&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Zararlı PDF dosyaları demin bahsettiğim nedenlerin de etkisiyle sıklıkla kitlesel ölçekli bilgisayar saldırılarının bir parçası olarak kullanılır.&lt;/p&gt;
 
@@ -67,7 +51,7 @@ Bugün sizlere benim de şu sıralar yeni yeni adım atmakta olduğum tersine m�
 	* Streams, usually containing large amounts of data
 	* The null object&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z2.png&quot; alt=&quot;PDF Dosya YApısı&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/z2.png&quot; alt=&quot;PDF Dosya YApısı&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;zararl-yazlmn-pdf-ile-almas&quot;&gt;Zararlı Yazılımın PDF ile Çalışması&lt;/h2&gt;
 
@@ -78,13 +62,13 @@ Biz bu işlemi Adobe Acrobat exploitini Metasploit ile PDF içine .exe dosyası 
   &lt;li&gt;Zararlı PDF’in çalışması esnasında cmd’de aşağıdaki eylemleri uygulayarak açılacaktır.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z3.png&quot; alt=&quot;cmd&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/z3.png&quot; alt=&quot;cmd&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Genellikle PDF içine JavaScript kullanarak zararlı yazılım gömülerek bu işlem yapılıyor, çünkü JavaScript heap spray gibi tekniklerle exploit etme yöntemlerinde sıkça kullanılır.&lt;/p&gt;
 
 &lt;p&gt;Herhangi bir kötü niyetli PDF dosyasını açtığınızda ilk olarak JavaScript kodu yürütülecek ve exploit edilecektir.Daha sonra shellcode yürütülür ve Trojan .exe çalışacaktır.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/z3.png&quot; alt=&quot;execute&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/z3.png&quot; alt=&quot;execute&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;metasploit-ile-zararl-pdf-dosyas-oluturma&quot;&gt;Metasploit ile Zararlı PDF Dosyası Oluşturma&lt;/h2&gt;
 
@@ -96,25 +80,25 @@ Biz bu işlemi Adobe Acrobat exploitini Metasploit ile PDF içine .exe dosyası 
   &lt;li&gt;msfconsole’u açıp aşağıdaki komutları uygulayın.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw1.png&quot; alt=&quot;mw1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw1.png&quot; alt=&quot;mw1&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Gerekli ayarlamaları yaptıktan sonra &lt;code&gt;exploit&lt;/code&gt; komutuyla zararlı PDF dosyamızı /root/.msf4/local/zararlipdf.pdf dizininde bulabilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw2.png&quot; alt=&quot;mw2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw2.png&quot; alt=&quot;mw2&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;İşte badboy karşımızda :)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw3.png&quot; alt=&quot;mw3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw3.png&quot; alt=&quot;mw3&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Zararlı PDF dosyasını göndermeden önce, reverse connection sağlamak için listener aktif etmemiz lazım.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw4.png&quot; alt=&quot;mw4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw4.png&quot; alt=&quot;mw4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;PDF dosyası açıldığında metasploit tarafından bize session yani bir oturum açılacaktır.Meterpreter kullanarak sisteme erişim sağlamış olduk böylece.&lt;/p&gt;
 
@@ -135,19 +119,19 @@ Başlıca iki analiz yöntemi vardır: online ve offline.Şimdi bunları inceley
   &lt;li&gt;PDF dosyası Detector-Result sonucununda “suspicious” yani şüpheli olarak görünüyor.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on1.png&quot; alt=&quot;on1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/on1.png&quot; alt=&quot;on1&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Exploit metodu “util.printf” ve shellcode..&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on2.png&quot; alt=&quot;on2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/on2.png&quot; alt=&quot;on2&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;pdf-examiner&quot;&gt;PDF Examiner&lt;/h1&gt;
 
 &lt;p&gt;Kırmızı yazılı alanda analiz sonuçları belirtilmekte.&lt;a href=&quot;http://www.malwaretracker.com/&quot;&gt;PDF Examiner&lt;/a&gt; adresinden ulaşabilirsiniz.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on3.png&quot; alt=&quot;on3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/on3.png&quot; alt=&quot;on3&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;jsunpack&quot;&gt;Jsunpack&lt;/h1&gt;
 
@@ -157,7 +141,7 @@ Başlıca iki analiz yöntemi vardır: online ve offline.Şimdi bunları inceley
   &lt;li&gt;malicios ile başlayan ilk iki satır, zafiyet hakkında bilgi vermekte.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/on4.png&quot; alt=&quot;on4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/on4.png&quot; alt=&quot;on4&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;offline-pdf-analiz-aralar&quot;&gt;Offline PDF Analiz Araçları&lt;/h2&gt;
 
@@ -171,16 +155,16 @@ Peepdf’in güzel yanı, görevleri gerçekleştirmek için başka araçlara ih
     &lt;p&gt;Şimdi adım adım inceleyelim…&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw5.png&quot; alt=&quot;mw5&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw5.png&quot; alt=&quot;mw5&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw6.png&quot; alt=&quot;mw6&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw6.png&quot; alt=&quot;mw6&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw7.png&quot; alt=&quot;mw7&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw7.png&quot; alt=&quot;mw7&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw8.png&quot; alt=&quot;mw8&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw8.png&quot; alt=&quot;mw8&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -190,7 +174,7 @@ Peepdf’in güzel yanı, görevleri gerçekleştirmek için başka araçlara ih
 
 &lt;p&gt;Analiz edilen pdf dosyasından javascript, obj, endobj, stream gibi headerları çıkarabilir.Bazı PDF exploitleri bu tarz headerları değiştirebilir, pdfid pdf içinde neler olduğunu tam anlamıyla gösterebilir.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/mw9.png&quot; alt=&quot;mw9&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/mw9.png&quot; alt=&quot;mw9&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;origami&quot;&gt;Origami&lt;/h1&gt;
 
@@ -201,7 +185,7 @@ Varolan PDF dosyalarına zararlı kod enjekte etmek için de kullanılabilir.Yak
   &lt;li&gt;Ekran görüntüsü şu şekilde:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of2.png&quot; alt=&quot;of2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/of2.png&quot; alt=&quot;of2&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;pdf-stream-dumper&quot;&gt;PDF Stream Dumper&lt;/h1&gt;
 
@@ -209,13 +193,13 @@ Varolan PDF dosyalarına zararlı kod enjekte etmek için de kullanılabilir.Yak
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of3.png&quot; alt=&quot;of3&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/of3.png&quot; alt=&quot;of3&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of4.png&quot; alt=&quot;of4&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/of4.png&quot; alt=&quot;of4&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/of6.png&quot; alt=&quot;of6&quot; /&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/of6.png&quot; alt=&quot;of6&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -248,26 +232,23 @@ infosecinstitute&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Fatih ERDOGAN&lt;/strong&gt;
 @FeCassie&lt;/p&gt;
 
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri/&quot;&gt;PDF Malware Analiz Teknikleri&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on November 06, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Git Kurulumu ve Kullanımı(Başlangıç)]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Temel-Github-Kullanimi/" />
-  <id>http://fecassie.github.io/linux/Temel-Github-Kullanimi</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-27T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhabalar,
+</description>
+                <pubDate>Thu, 06 Nov 2014 00:00:00 +0200</pubDate>
+                <link>http://ferdogan.net/2014/11/06/PDF-Malware-Analiz-Teknikleri/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/11/06/PDF-Malware-Analiz-Teknikleri/</guid>
+                
+                    <category>malware</category>
+                
+                    <category>security</category>
+                
+                    <category>analysis</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Git Kurulumu ve Kullanımı(Başlangıç)</title>
+                <description>&lt;p&gt;Merhabalar,
 Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.&lt;/p&gt;
 
 &lt;p&gt;Neyse fazla uzatmadan başlayalım…&lt;/p&gt;
@@ -305,7 +286,7 @@ Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı ha
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git1.png&quot; alt=&quot;ilk adım&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git1.png&quot; alt=&quot;ilk adım&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -330,13 +311,13 @@ Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı ha
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git2.png&quot; alt=&quot;id_rsa&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git2.png&quot; alt=&quot;id_rsa&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Evet şimdi kopyaladığımız key’i github hesabımıza ekleyelim. “settings” butonuna tıklayın, sonra SSH keys bölümüne girin, daha sonra “Add SSH key” butonuna basarak aşağıda gösterdiğim gibi ssh anahtarınızı ilgili alana kopyalayın.Ardından “Add key” butonuna tıklayarak işlemi tamamlayın.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git3.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git3.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;depo-oluturmak-ve-dosya-gndermek&quot;&gt;Depo Oluşturmak ve Dosya Göndermek&lt;/h2&gt;
 
@@ -344,7 +325,7 @@ Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı ha
   &lt;li&gt;Öncelikle depo oluşturmak için Github’ta Repositories kısmından New butonuna tıklayarak istediğiniz depo ismini girin ve Create repository butonuna tıklayın.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git4.png&quot; alt=&quot;git&quot; /&gt;	&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git4.png&quot; alt=&quot;git&quot; /&gt;	&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Daha sonra terminalden:
@@ -361,7 +342,7 @@ Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı ha
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git5.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git5.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Evet şimdi depomuza ilk dosyamızı eklemek için aşağıdakileri yapalım.
@@ -376,40 +357,37 @@ Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı ha
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git6.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git6.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Şimdi hesabınızdan Repositories kısmına gelerek depomuzun oluştuğunu ve içinde minik programımızın olduğunu görebilirsiniz.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git7.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git7.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/git8.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/git8.png&quot; alt=&quot;git&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Evet bir yazının daha sonuna geldik.Elimden geldiği kadarıyla github kurulumunu, depo oluşturup içine dosya veya projelerimizi göndermeyi anlatmaya çalıştım.Temel seviyede olması nedeniyle depo klonlama, ekip çalışması, pull&amp;amp;push gibi konulara değinmedim.Belki bir başka yazıda o konulara da değinebilirim.&lt;/p&gt;
 
 &lt;p&gt;Umarım faydalı olmuştur.Bir başka yazıda görüşmek üzere…&lt;/p&gt;
 
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Temel-Github-Kullanimi/&quot;&gt;Git Kurulumu ve Kullanımı(Başlangıç)&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 27, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Linux'ta Site Engellemek]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Linuxta-Site-Engellemek/" />
-  <id>http://fecassie.github.io/linux/Linuxta-Site-Engellemek</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-26T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhaba,
+</description>
+                <pubDate>Sat, 27 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/linux/2014/09/27/Temel-Github-Kullanimi/</link>
+                <guid isPermaLink="true">http://ferdogan.net/linux/2014/09/27/Temel-Github-Kullanimi/</guid>
+                
+                    <category>linux</category>
+                
+                    <category>github</category>
+                
+                
+                    <category>linux</category>
+                
+            </item>
+        
+            <item>
+                <title>Linux&#39;ta Site Engellemek</title>
+                <description>&lt;p&gt;Merhaba,
 Linux’ta belli web sitelerine giriş yapılmasını engelleyebilirsiniz.Bu tarz bir şeyi sanırım sunucularda kullanırsınız veya kişisel bilgisayarınızdan da belli sitelere giriş yapılmasını engelleyebilirsiniz :)&lt;/p&gt;
 
 &lt;p&gt;Varsayalım ki engellemek istediğiniz site benim blogum olsun(umarım böyle bir şey olmaz) :) 
@@ -423,26 +401,21 @@ Yani sitenin adı ferdogan.net&lt;/p&gt;
 Bağlantı hatası verdiğini göreceksiniz, çünkü ferdogan.net için IP adresini 0.0.0.0 olarak tanımladık.Böyle bir IP adresi yok, bu yüzden bağlantı hatası çıktı karşımıza yani bir nevi engellemiş olduk.&lt;/p&gt;
 
 &lt;p&gt;Ayarları tekrar eski haline döndürmek istiyorsanız yine aynı şekilde hosts dosyasının içerisine girip ilgili satırı silebilirsiniz.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Linuxta-Site-Engellemek/&quot;&gt;Linux'ta Site Engellemek&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 26, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Linux'ta DNS Değiştirmek]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek/" />
-  <id>http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-26T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+</description>
+                <pubDate>Fri, 26 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/linux/2014/09/26/Linuxta-Site-Engellemek/</link>
+                <guid isPermaLink="true">http://ferdogan.net/linux/2014/09/26/Linuxta-Site-Engellemek/</guid>
+                
+                    <category>linux</category>
+                
+                
+                    <category>linux</category>
+                
+            </item>
+        
+            <item>
+                <title>Linux&#39;ta DNS Değiştirmek</title>
+                <description>&lt;p&gt;Merhaba,&lt;/p&gt;
 
 &lt;p&gt;Engellenmiş sitelere girmek için vs. DNS değiştirme,VPN veya proxy kullanımı gibi farklı yöntemler var.Bende sizlere linuxta kolay bir şekilde nasıl DNS değiştirildiğini göstermeye karar verdim.
 DNS ayarlarını yapmak için etc dizini altında bulunan resolv.conf isimli konfigürasyon dosyasının içeriğini değiştirmemiz gerekiyor.
@@ -465,26 +438,21 @@ OpenDNS ayarlarını kullanmak içinse:
 Bunun kalıcı olması için:
     &lt;code&gt;chattr +i /etc/resolv.conf&lt;/code&gt;
 Son olarak bu komutla da yaptığımız ayarlar kalıcı hale geldi.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek/&quot;&gt;Linux'ta DNS Değiştirmek&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 26, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Linux'ta Dosya Şifreleme]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Linuxta-Dosya-Sifreleme/" />
-  <id>http://fecassie.github.io/Linuxta-Dosya-Sifreleme</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-14T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhaba,
+</description>
+                <pubDate>Fri, 26 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/linux/2014/09/26/Linuxta-DNS-Degistirmek/</link>
+                <guid isPermaLink="true">http://ferdogan.net/linux/2014/09/26/Linuxta-DNS-Degistirmek/</guid>
+                
+                    <category>linux</category>
+                
+                
+                    <category>linux</category>
+                
+            </item>
+        
+            <item>
+                <title>Linux&#39;ta Dosya Şifreleme</title>
+                <description>&lt;p&gt;Merhaba,
 Bu gece ilgimi çeken bir konuyu sizlerle paylaşmak istedim.Peki ne bu? Dosya Şifreleme!.Dosyaları şifrelemek, verileri saklamak vs. çoğu insanın ilgisini çekiyordur mutlaka.Benimde sadece TrueCrypt yazılımıyla şifreleme konusunda bilgim olmuştu, sonra işin linux kısmını araştırınca benzer şeylerin burada da yapıldığını gördüm ve bununla ilgili bir yazı yazmaya karar verdim.&lt;/p&gt;
 
 &lt;h3 id=&quot;peki-nasl-olacak-bu&quot;&gt;Peki nasıl olacak bu?&lt;/h3&gt;
@@ -505,51 +473,48 @@ Bu gece ilgimi çeken bir konuyu sizlerle paylaşmak istedim.Peki ne bu? Dosya �
 Şifreleme için bir algoritmaya ve sadece bize ait bir anahtara ihtiyacımız var.Bu anahtar ile dosyayı hem şifreleyebilir hem de tekrar şifrelenmiş dosyayı açabiliriz.Şifrelediğimiz dosyayı açarken de bu anahtar bize lazım olacak.
 Şifrelenmiş dosya açılsa bile anahtar bilinmediği sürece dosyanın içindeki gerçek veriye ulaşılamayacaktır.
   &lt;code&gt;~$ openssl enc -des3 -in sifrelebeni.txt -k anahtar&lt;/code&gt; komutuyla dosyamızı belirlediğimiz anahtarı kullanarak des3 algoritması ile şifreledik.
-&lt;img src=&quot;http://fecassie.github.io/assets/1.png&quot; alt=&quot;des3 şifreleme&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://ferdogan.net/assets/1.png&quot; alt=&quot;des3 şifreleme&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Şifrelenmiş içeriği bir dosyaya yazmak istersek &lt;code&gt;~$ openssl enc -des3 -in sifrelebeni.txt -out sifrelendi.des3 -k anahtar&lt;/code&gt; komutunu kullanabiliriz.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/2.png&quot; alt=&quot;des3 şifreleme2&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/2.png&quot; alt=&quot;des3 şifreleme2&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Eğer dosya değilde komple bir dizini şifrelemek istiyorsak tar, openssl ve dd komutlarını birlikte kullanmamız gerekiyor.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;code&gt;~$ tar -zcf - dizin/ | openssl des3 -salt -k anahtar | dd of=dizin.des3&lt;/code&gt;
-&lt;img src=&quot;http://fecassie.github.io/assets/3.png&quot; alt=&quot;des3 şifreleme3&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;http://ferdogan.net/assets/3.png&quot; alt=&quot;des3 şifreleme3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Şifrelenmiş dizini çözmek için ise;
 &lt;code&gt;~$ dd if=dizin.des3 | openssl des3 -d -k anahtar | tar xzf -&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/4.png&quot; alt=&quot;des3 şifreleme4&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/4.png&quot; alt=&quot;des3 şifreleme4&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Görüldüğü üzere linux’ta dosyalar bu şekilde şifreleniyor ve şifreleri çözülebiliyor.Tabi bunların hepsini yaparken bir anahtar belirlememiz, çözerken de o anahtarı bilmemiz şart.
 Bir başka yazıda görüşmek üzere..&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://ferdogan.net&quot;&gt;Fatih ERDOGAN&lt;/a&gt; (&lt;a href=&quot;https://twitter.com/FeCassie&quot;&gt;@FeCassie&lt;/a&gt;)&lt;/p&gt;
 
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Linuxta-Dosya-Sifreleme/&quot;&gt;Linux'ta Dosya Şifreleme&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 14, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[TheHarvester ile Footprinting]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/TheHarvester-ile-Footprinting/" />
-  <id>http://fecassie.github.io/TheHarvester-ile-Footprinting</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-12T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhaba,&lt;/p&gt;
+</description>
+                <pubDate>Sun, 14 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/14/Linuxta-Dosya-Sifreleme/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/14/Linuxta-Dosya-Sifreleme/</guid>
+                
+                    <category>linux</category>
+                
+                    <category>cryptography</category>
+                
+                    <category>openssl</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>TheHarvester ile Footprinting</title>
+                <description>&lt;p&gt;Merhaba,&lt;/p&gt;
 
 &lt;p&gt;Backtrack ile hedef sistem hakkında bilgi toplamanın farklı araçlarla birçok yolu vardır.
 Daha önceki yazımda yine Backtrack içerisinde bulunan Metagoofil aracıyla hedef sistemden nasıl pdf,doc vs. gibi belge toplayabileceğimizi anlatmıştım.
@@ -620,26 +585,29 @@ Programın kullanımı çok basit.Genel arama komutu şu şekildedir :&lt;/p&gt;
 İyi seyirler.&lt;/p&gt;
 
 &lt;iframe src=&quot;//player.vimeo.com/video/37834893&quot; width=&quot;500&quot; height=&quot;281&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/TheHarvester-ile-Footprinting/&quot;&gt;TheHarvester ile Footprinting&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[SSH Brute Force Attack via Metasploit]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/" />
-  <id>http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-12T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhabalar,
+</description>
+                <pubDate>Fri, 12 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/12/TheHarvester-ile-Footprinting/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/12/TheHarvester-ile-Footprinting/</guid>
+                
+                    <category>backtrack5</category>
+                
+                    <category>kali linux</category>
+                
+                    <category>linux</category>
+                
+                    <category>security</category>
+                
+                    <category>footprinting</category>
+                
+                    <category>theharvester</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>SSH Brute Force Attack via Metasploit</title>
+                <description>&lt;p&gt;Merhabalar,
 Metasploit’teki scanner modülü ile SSH servere yapılan Brute Force saldırısı hakkında bir videolu anlatım yaptım.
 Ama önce bazı terimleri konunun yararı açısından incelememizde fayda var.&lt;/p&gt;
 
@@ -662,7 +630,7 @@ Tel-net ile açığa çıkan güvenlik problemlerinin önüne geçmek amacıyla 
 
 &lt;p&gt;SSH çalışma mantığı:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://fecassie.github.io/assets/ssh.jpg&quot; alt=&quot;SSH çalışma mantığı&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ferdogan.net/assets/ssh.jpg&quot; alt=&quot;SSH çalışma mantığı&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Eğer SSH şifreniz varsayılan olarak tanımlıysa,şifreyi değiştirmenizi tavsiye ederim.&lt;/p&gt;
 
@@ -678,26 +646,29 @@ Bu şekilde root şifrenizi değiştirebilirsiniz.&lt;/p&gt;
 İyi seyirler..&lt;/p&gt;
 
 &lt;iframe src=&quot;//player.vimeo.com/video/37900454&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/&quot;&gt;SSH Brute Force Attack via Metasploit&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Metagoofil Belge Toplama Aracı]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/" />
-  <id>http://fecassie.github.io/Metagoofil-Belge-Toplama-Aracı</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-12T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Merhabalar,&lt;/p&gt;
+</description>
+                <pubDate>Fri, 12 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/12/SSH-Brute-Force-Attack-via-Metasploit/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/12/SSH-Brute-Force-Attack-via-Metasploit/</guid>
+                
+                    <category>backtrack5</category>
+                
+                    <category>kali linux</category>
+                
+                    <category>linux</category>
+                
+                    <category>security</category>
+                
+                    <category>metasploit</category>
+                
+                    <category>ssh</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Metagoofil Belge Toplama Aracı</title>
+                <description>&lt;p&gt;Merhabalar,&lt;/p&gt;
 
 &lt;p&gt;Bu gece Backtrack5 ile birlikte gelen bilgi toplama araçlarından biri olan Metagoofil isimli araçtan söz edeceğim.&lt;/p&gt;
 
@@ -749,26 +720,29 @@ Word(.doc),Excel(.xls),Sunum Dosyaları(.pdf,.ppt,.odp) dosya formatlarını des
 &lt;p&gt;Evet şimdi bütün bu bahsettiklerimizi videoda uygulayalım.İyi seyirler…&lt;/p&gt;
 
 &lt;iframe src=&quot;//player.vimeo.com/video/37350062&quot; width=&quot;500&quot; height=&quot;375&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/&quot;&gt;Metagoofil Belge Toplama Aracı&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[Goohost İle Bilgi Toplama]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/Goohost-%C4%B0le-Bilgi-Toplama/" />
-  <id>http://fecassie.github.io/Goohost-İle-Bilgi-Toplama</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-12T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;p&gt;Goohost,Google arama motoru kullanarak belirli bir DNS içindeki Host,Subdomain,IP Adresleri,e-postaları araştıran Backtrack5 altında bulunan basit bir araçtır.
+</description>
+                <pubDate>Fri, 12 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/12/Metagoofil-Belge-Toplama-Arac%C4%B1/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/12/Metagoofil-Belge-Toplama-Arac%C4%B1/</guid>
+                
+                    <category>backtrack5</category>
+                
+                    <category>metagoofil</category>
+                
+                    <category>linux</category>
+                
+                    <category>security</category>
+                
+                    <category>footprinting</category>
+                
+                    <category>kali</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Goohost İle Bilgi Toplama</title>
+                <description>&lt;p&gt;Goohost,Google arama motoru kullanarak belirli bir DNS içindeki Host,Subdomain,IP Adresleri,e-postaları araştıran Backtrack5 altında bulunan basit bir araçtır.
 watakushi kod adlı yazar tarafından,Bash Script dili ile kodlanmıştır.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;cd /pentest/enumeration/google/goohost&lt;/code&gt; dizininden
@@ -778,26 +752,29 @@ Kullanımını videoda anlattım.İyi seyirler.&lt;/p&gt;
 
 &lt;iframe src=&quot;//player.vimeo.com/video/45663778&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/Goohost-%C4%B0le-Bilgi-Toplama/&quot;&gt;Goohost İle Bilgi Toplama&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-  
-
-<entry>
-  <title type="html"><![CDATA[BT5-CUPP İle Wordlist Oluşturma]]></title>
-  <link rel="alternate" type="text/html" href="http://fecassie.github.io/BT5-Cupp-%C4%B0le-Wordlist-Olu%C5%9Fturma/" />
-  <id>http://fecassie.github.io/BT5-Cupp-İle-Wordlist-Oluşturma</id>
-  <updated>fatih_erdoganT00:00:00-00:00</updated>
-  <published>2014-09-12T00:00:00+03:00</published>
-  
-  <author>
-    <name>Fatih Erdogan</name>
-    <uri>http://fecassie.github.io</uri>
-    
-  </author>
-  <content type="html">&lt;h1 id=&quot;cupp-common-user-passwords-profiler&quot;&gt;CUPP (Common User Passwords Profiler)&lt;/h1&gt;
+</description>
+                <pubDate>Fri, 12 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/12/Goohost-I%CC%87le-Bilgi-Toplama/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/12/Goohost-I%CC%87le-Bilgi-Toplama/</guid>
+                
+                    <category>backtrack5</category>
+                
+                    <category>goohost</category>
+                
+                    <category>linux</category>
+                
+                    <category>security</category>
+                
+                    <category>footprinting</category>
+                
+                    <category>kali</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>BT5-CUPP İle Wordlist Oluşturma</title>
+                <description>&lt;h1 id=&quot;cupp-common-user-passwords-profiler&quot;&gt;CUPP (Common User Passwords Profiler)&lt;/h1&gt;
 
 &lt;p&gt;Merhaba,&lt;/p&gt;
 
@@ -810,8 +787,23 @@ Kullanımını videoda anlattım.İyi seyirler.&lt;/p&gt;
 
 &lt;iframe src=&quot;//player.vimeo.com/video/46651568&quot; width=&quot;500&quot; height=&quot;281&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-
-  &lt;p&gt;&lt;a href=&quot;http://fecassie.github.io/BT5-Cupp-%C4%B0le-Wordlist-Olu%C5%9Fturma/&quot;&gt;BT5-CUPP İle Wordlist Oluşturma&lt;/a&gt; was originally published by Fatih Erdogan at &lt;a href=&quot;http://fecassie.github.io&quot;&gt;Fatih Erdoğan&lt;/a&gt; on September 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-</feed>
+</description>
+                <pubDate>Fri, 12 Sep 2014 00:00:00 +0300</pubDate>
+                <link>http://ferdogan.net/2014/09/12/BT5-Cupp-I%CC%87le-Wordlist-Olus%CC%A7turma/</link>
+                <guid isPermaLink="true">http://ferdogan.net/2014/09/12/BT5-Cupp-I%CC%87le-Wordlist-Olus%CC%A7turma/</guid>
+                
+                    <category>backtrack5</category>
+                
+                    <category>cupp</category>
+                
+                    <category>linux</category>
+                
+                    <category>security</category>
+                
+                    <category>wordlist</category>
+                
+                
+            </item>
+        
+    </channel>
+</rss>

@@ -1,230 +1,626 @@
-<!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="tr"><!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<title>Fatih Erdoğan</title>
-<meta name="description" content="Fatih Erdogan - Personal Blog">
-<meta name="keywords" content="Jekyll, theme, responsive, blog, template">
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+      <title>Fatih Erdogan</title>
+      <meta name="description" content="falan da filan Amigdala da Amigdala" />
 
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Twitter Cards -->
-<meta name="twitter:title" content="Fatih Erdoğan">
-<meta name="twitter:description" content="Fatih Erdogan - Personal Blog">
-<meta name="twitter:site" content="@FeCassie">
-<meta name="twitter:creator" content="@FeCassie">
+      <link rel="alternate" type="application/rss+xml" href="http://ferdogan.net/feed.xml">
+      <link rel="shortcut icon" href="/favicon.ico">
+      <link rel="prefetch" href="http://ferdogan.net">
+      <link rel="canonical" href="http://ferdogan.net/">
 
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://fecassie.github.io/images/default-thumb.png">
+      <link rel="stylesheet" href="/assets/css/init.css">
+      <link href='//fonts.googleapis.com/css?family=Domine:700|Open+Sans:400,600|Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
 
-<!-- Open Graph -->
-<meta property="og:locale" content="en_US">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Fatih Erdoğan">
-<meta property="og:description" content="Fatih Erdogan - Personal Blog">
-<meta property="og:url" content="http://fecassie.github.io/">
-<meta property="og:site_name" content="Fatih Erdoğan">
+    <header class="title">
+    <a href="http://ferdogan.net"><i class="fa fa-terminal fa-lg"></i><span>Fatih Erdogan</span></a>
+</header>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<nav class="wrapper  ">
+    <a href="#" onclick="return false;"><i class="fa fa-navicon fa-lg"></i></a>
+    <ul>
+        
+            
+        
+            <li><a href="/about/">About</a></li>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </ul>
+</nav>
 
-  ga('create', 'UA-54768932-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-<link rel="canonical" href="http://fecassie.github.io/">
-<link href="http://fecassie.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Fatih Erdoğan Feed">
-
-
-<!-- http://t.co/dKP3o1e -->
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="http://fecassie.github.io/assets/css/main.css">
-
-<meta http-equiv="cleartype" content="on">
-
-<!-- HTML5 Shiv and Media Query Support -->
-<!--[if lt IE 9]>
-	<script src="http://fecassie.github.io/assets/js/vendor/html5shiv.min.js"></script>
-	<script src="http://fecassie.github.io/assets/js/vendor/respond.min.js"></script>
-<![endif]-->
-
-<!-- Modernizr -->
-<script src="http://fecassie.github.io/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
-
-<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
-
-<!-- Icons -->
-<!-- 16x16 -->
-<link rel="shortcut icon" href="http://fecassie.github.io/favicon.ico">
-<!-- 32x32 -->
-<link rel="shortcut icon" href="http://fecassie.github.io/favicon.png">
-<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="http://fecassie.github.io/images/apple-touch-icon-precomposed.png">
-<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://fecassie.github.io/images/apple-touch-icon-72x72-precomposed.png">
-<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://fecassie.github.io/images/apple-touch-icon-114x114-precomposed.png">
-<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://fecassie.github.io/images/apple-touch-icon-144x144-precomposed.png">
-
-</head>
-
-<body class="home">
-
-<!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
-
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="http://fecassie.github.io">Fatih Erdoğan</a>
-	</div><!-- /.site-name -->
-	<div class="top-navigation">
-		<nav role="navigation" id="site-nav" class="nav">
-		    <ul>
-		        
-					    
-					        
-					    
-					    <li><a href="http://fecassie.github.io/about/" >About</a></li>
-					  
-					    
-					        
-					    
-					    <li><a href="http://fecassie.github.io/posts/" >Archive</a></li>
-					  
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-</div><!-- /.navigation-wrapper -->
-
-
-
-<div class="article-author-side">
-  
-
-
-
-	<img src="http://fecassie.github.io/images/fecassie.jpg" class="bio-photo" alt="Fatih Erdoğan bio photo"></a>
-
-<h3>Fatih Erdoğan</h3>
-<p>Sistem Güvenliği ve Linux meraklısı, özgür yazılımcı, bisiklet tutkunu uykusuz mühendis</p>
-
-<a href="http://twitter.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
-<a href="http://facebook.com/f4tihErd0gan" class="author-social" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a>
-
-<a href="http://linkedin.com/in/fatiherdogan1" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-<a href="http://instagram.com/fat1herdogan" class="author-social" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
-
-<a href="http://github.com/FeCassie" class="author-social" target="_blank"><i class="fa fa-github"></i> Github</a>
-
-
-
-
-
-
-
+    <div class="profile">
+	<img src="/assets/img/bloglogo.jpg" class="profileimage" alt="user">
+	<h4>Fatih Erdogan</h4>
+	<p>falan da filan Amigdala da Amigdala</p>
+	<hr>
 </div>
 
-<div id="index">
-  <h3><a href="http://fecassie.github.io/posts/">Recent Posts</a></h3>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/PDF-Malware-Analiz-Teknikleri/" title="PDF Malware Analiz Teknikleri">PDF Malware Analiz Teknikleri</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/linux/Temel-Github-Kullanimi/" title="Git Kurulumu ve Kullanımı(Başlangıç)">Git Kurulumu ve Kullanımı(Başlangıç)</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/linux/Linuxta-Site-Engellemek/" title="Linux'ta Site Engellemek">Linux'ta Site Engellemek</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/linux/Linuxta-DNS-Degistirmek/" title="Linux'ta DNS Değiştirmek">Linux'ta DNS Değiştirmek</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/Linuxta-Dosya-Sifreleme/" title="Linux'ta Dosya Şifreleme">Linux'ta Dosya Şifreleme</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/TheHarvester-ile-Footprinting/" title="TheHarvester ile Footprinting">TheHarvester ile Footprinting</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/SSH-Brute-Force-Attack-via-Metasploit/" title="SSH Brute Force Attack via Metasploit">SSH Brute Force Attack via Metasploit</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/Metagoofil-Belge-Toplama-Arac%C4%B1/" title="Metagoofil Belge Toplama Aracı">Metagoofil Belge Toplama Aracı</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/Goohost-%C4%B0le-Bilgi-Toplama/" title="Goohost İle Bilgi Toplama">Goohost İle Bilgi Toplama</a></h2>
-      <p></p>
-    
-  </article>
-      
-  <article>
-    
-      <h2><a href="http://fecassie.github.io/BT5-Cupp-%C4%B0le-Wordlist-Olu%C5%9Fturma/" title="BT5-CUPP İle Wordlist Oluşturma">BT5-CUPP İle Wordlist Oluşturma</a></h2>
-      <p></p>
-    
-  </article>
-  
-</div><!-- /#index -->
+<section class="posts postindex wrapper">
 
-<div class="footer-wrap">
-  <footer>
-    
+	
+		<article class="post ">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					
+				</h2>
+				<h1><a href="/2014/11/06/PDF-Malware-Analiz-Teknikleri/">PDF Malware Analiz Teknikleri</a></h1>
+				<span>
+					<i class="fa fa-clock-o"></i><time datetime="2014-11-06">November 6, 2014</time>.
+				</span>
+				<div class="excerpt">
+					
+						<p>Merhabalar,
+Bugün sizlere benim de şu sıralar yeni yeni adım atmakta olduğum tersine mühendislik ve zararlı yazılım analiziyle alakalı, bana ilgi çekici gelen bir konudan bahsetmek istiyorum.”PDF Malware Analizi”.</p>
 
-<span>&copy; 2014 Fatih Erdoğan. | just security</span>
+<p>Bilindiği üzere PDF dosyalarını günlük yaşantımızda, işte, evde çoğu yerde kullanıyoruz.Bu PDFler olmadan iş yaşantısını hayal etmek bile oldukça zor aslında.Çünkü kurumsal/bireysel belgeler, şirket broşürleri ve hatta davetiyeler bile çoğu zaman PDF formatında tutuluyor.</p>
 
-  </footer>
-</div><!-- /.footer-wrap -->
+<p>Geçtiğimiz yıllarda PDF dosyalarıyla ilgili buffer overflow gibi zafiyetler yayınlandı ve bu zafiyetlere yönelik saldırılar oluşmaya başladı.Hatta saldırıların birçoğunun internet üzerinde, içinde zararlı kod bulunduran PDF dosyalarının sisteme indirilmesiyle veya bu PDF dosyalarının sosyal mühendislik yöntemleri kullanılarak sistemlere kullanıcının anlamayacağı bir şekilde yerleştirilerek gerçekleştirildiği görüldü.</p>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://fecassie.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://fecassie.github.io/assets/js/scripts.min.js"></script>
+<p>Sadece PDF dosyasını açmak gibi basit bir hareket bile internetten gelen zararlı kodun sisteme bulaşmasını sağlayacak bir güvenlik ihlali yaratabilir.Kullanıcının anlamaması için sahte bir PDF dosyası şekline bürünerek kullanıcıyı kandırabilir.</p>
 
+<p>Bu konuyla ilgili aşağıdaki resimde geçtiğimiz yıllardaki Adobe Reader saldırılarının yüzdelik artışını görebilirsiniz.</p>
 
-  
-</body>
+<p><img src="/assets/z1.png" alt="Adobe Reader Saldırıları" /></p>
+
+<p>Zararlı PDF dosyaları demin bahsettiğim nedenlerin de etkisiyle sıklıkla kitlesel ölçekli bilgisayar saldırılarının bir parçası olarak kullanılır.</p>
+
+<p>PDF dosyalarını analiz etmeyi bilmek iyi güzel fakat analizi yapacak kişinin PDF dosya yapısı hakkında önceden bilgisinin olması her halükarda daha olumludur.
+Öyleyse şimdi bizde PDF dosya yapısını inceleyelim…</p>
+
+<h2 id="pdf-dosya-yaps">PDF Dosya Yapısı</h2>
+
+<p>PDF, statik ve dinamik zengin içerik sunma yeteneğine sahiptir.PDF dosyalarıyla görsel olarak ilgi çekici, interaktif ve taşınabilir belgeler sunabilirsiniz.Her ne kadar bu geniş özellik ve imkanlardan yararlanıyor olsak bile işin bir karanlık tarafı vardır.Az önce bahsettiğimiz dinamik pdf özellikleri, zararlı kodları barındırabilecek şekilde kullanılmıştır.</p>
+
+<p>Önceki yıllarda bilgisayar korsanlarının bu tarz kötü niyetli dosyaları, zararlı kod barındıran kötü amaçlı yazılımları yüklemek ve kullanıcıların kimlik bilgilerini çalmak için kullandığı ortaya çıkmıştır.</p>
+
+<p>Normalde PDF zararlı yazılımları, bu dosyaların içine gömülen bir script sayesinde çalışmakta.Bu zararlı script PDF dosyasının çalışmasını destekleyen bir yapıya sahiptir.Bu amaca yönelik en yaygın kullanılan script dili JavaScript’tir.</p>
+
+<p>Çoğu durumda bu gömülü scriptler işlevselliği sağlamak veya işletim sistemine zararlı kod yüklemek için kullanılır.</p>
+
+<h1 id="pdf-dkman-yaps">PDF Döküman Yapısı</h1>
+
+<p>Bir PDF dosyasının genel yapısı aşağıdaki bileşenlerden oluşur:
+	* Boolean values, representing true or false
+	* Numbers
+	* Strings
+	* Names
+	* Arrays, ordered collections of objects
+	* Dictionaries, collections of objects indexed by names
+	* Streams, usually containing large amounts of data
+	* The null object</p>
+
+<p><img src="http://ferdogan.net/assets/z2.png" alt="PDF Dosya YApısı" /></p>
+
+<h2 id="zararl-yazlmn-pdf-ile-almas">Zararlı Yazılımın PDF ile Çalışması</h2>
+
+<p>Çalıştırma işlemi sırasında zararlı bir uygulama açılır ya da bir belgeye veri yazdırır.
+Biz bu işlemi Adobe Acrobat exploitini Metasploit ile PDF içine .exe dosyası gömerek yapıyoruz.</p>
+
+<ul>
+  <li>Zararlı PDF’in çalışması esnasında cmd’de aşağıdaki eylemleri uygulayarak açılacaktır.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/z3.png" alt="cmd" /></p>
+
+<p>Genellikle PDF içine JavaScript kullanarak zararlı yazılım gömülerek bu işlem yapılıyor, çünkü JavaScript heap spray gibi tekniklerle exploit etme yöntemlerinde sıkça kullanılır.</p>
+
+<p>Herhangi bir kötü niyetli PDF dosyasını açtığınızda ilk olarak JavaScript kodu yürütülecek ve exploit edilecektir.Daha sonra shellcode yürütülür ve Trojan .exe çalışacaktır.</p>
+
+<p><img src="http://ferdogan.net/assets/z3.png" alt="execute" /></p>
+
+<h2 id="metasploit-ile-zararl-pdf-dosyas-oluturma">Metasploit ile Zararlı PDF Dosyası Oluşturma</h2>
+
+<p>Şimdi Adobe Reader “util.printf()” JavaScript fonksiyonundaki stack buffer overflow zafiyetini kullanarak kendi zararlı PDF dosyamızı oluşturalım.Adobe Reader, genellikle stack-based-buffer-overflow zafiyetine meyilliymiş bende bunu yeni öğrendim…</p>
+
+<p>Herneyse şimdi zararlı PDF’i Metasploit kullanarak adım adım oluşturalım:</p>
+
+<ul>
+  <li>msfconsole’u açıp aşağıdaki komutları uygulayın.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/mw1.png" alt="mw1" /></p>
+
+<ul>
+  <li>Gerekli ayarlamaları yaptıktan sonra <code>exploit</code> komutuyla zararlı PDF dosyamızı /root/.msf4/local/zararlipdf.pdf dizininde bulabilirsiniz.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/mw2.png" alt="mw2" /></p>
+
+<ul>
+  <li>İşte badboy karşımızda :)</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/mw3.png" alt="mw3" /></p>
+
+<ul>
+  <li>Zararlı PDF dosyasını göndermeden önce, reverse connection sağlamak için listener aktif etmemiz lazım.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/mw4.png" alt="mw4" /></p>
+
+<p>PDF dosyası açıldığında metasploit tarafından bize session yani bir oturum açılacaktır.Meterpreter kullanarak sisteme erişim sağlamış olduk böylece.</p>
+
+<ul>
+  <li>Zararlı PDF’i Analiz Etme Yöntemleri
+Başlıca iki analiz yöntemi vardır: online ve offline.Şimdi bunları inceleyelim.</li>
+</ul>
+
+<h2 id="online-pdf-analiz-aralar">Online PDF Analiz Araçları</h2>
+
+<p>Online PDF Analiz araçları çoğu zaman işleri daha da kolaylaştırıyor.Siteye upload edip analizden sonra raporları inceleyerek gerekli bilgiyi edinebiliriz.</p>
+
+<h1 id="wepawet">Wepawet</h1>
+
+<p>Wepawet Flash, JavaScript ve PDF dosyalarını analiz eden web tabanlı online malware tarayıcısı.<a href="http://wepawet.iseclab.org/">Wepawet</a> bağlantısından inceleyebilirsiniz.</p>
+
+<ul>
+  <li>PDF dosyası Detector-Result sonucununda “suspicious” yani şüpheli olarak görünüyor.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/on1.png" alt="on1" /></p>
+
+<ul>
+  <li>Exploit metodu “util.printf” ve shellcode..</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/on2.png" alt="on2" /></p>
+
+<h1 id="pdf-examiner">PDF Examiner</h1>
+
+<p>Kırmızı yazılı alanda analiz sonuçları belirtilmekte.<a href="http://www.malwaretracker.com/">PDF Examiner</a> adresinden ulaşabilirsiniz.</p>
+
+<p><img src="http://ferdogan.net/assets/on3.png" alt="on3" /></p>
+
+<h1 id="jsunpack">Jsunpack</h1>
+
+<p><a href="http://jsunpack.jeek.org/">Jsunpack</a> adresinden sisteme ulaşabilirsiniz.</p>
+
+<ul>
+  <li>malicios ile başlayan ilk iki satır, zafiyet hakkında bilgi vermekte.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/on4.png" alt="on4" /></p>
+
+<h2 id="offline-pdf-analiz-aralar">Offline PDF Analiz Araçları</h2>
+
+<h1 id="peepdf">Peepdf</h1>
+
+<p>Peepdf, PDF dosyalarının zararlı olup olmadığını öğrenmek ve incelemek amacıyla python dilinde geliştirilen bir araçtır.
+Peepdf’in güzel yanı, görevleri gerçekleştirmek için başka araçlara ihtiyacı olmaması, pdf analizi için gerekebilecek bileşenleri kendi içinde barındırması.</p>
+
+<ul>
+  <li>
+    <p>Şimdi adım adım inceleyelim…</p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/mw5.png" alt="mw5" /></p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/mw6.png" alt="mw6" /></p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/mw7.png" alt="mw7" /></p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/mw8.png" alt="mw8" /></p>
+  </li>
+</ul>
+
+<h1 id="pdfid">Pdfid</h1>
+
+<p>Pdfid, bir PDF dosyasından kullanışlı bilgiler elde etmenizi sağlayan bir araçtır.Peepdf gibi Pdfid’de python ile geliştirilmiştir.</p>
+
+<p>Analiz edilen pdf dosyasından javascript, obj, endobj, stream gibi headerları çıkarabilir.Bazı PDF exploitleri bu tarz headerları değiştirebilir, pdfid pdf içinde neler olduğunu tam anlamıyla gösterebilir.</p>
+
+<p><img src="http://ferdogan.net/assets/mw9.png" alt="mw9" /></p>
+
+<h1 id="origami">Origami</h1>
+
+<p>Origami, PDF dosyalarını parse, analiz ve forge etmek amacıyla kullanılan bir Ruby frameworktür.
+Varolan PDF dosyalarına zararlı kod enjekte etmek için de kullanılabilir.Yakın zamanda Origami ile ilgili daha ayrıntılı bir yazı yazmayı düşündüğümden, şu an ayrıntılı olarak incelemiyorum.</p>
+
+<ul>
+  <li>Ekran görüntüsü şu şekilde:</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/of2.png" alt="of2" /></p>
+
+<h1 id="pdf-stream-dumper">PDF Stream Dumper</h1>
+
+<p>Bu programla ilgili varolan kaynaklardan aldığım ekran görüntülerini incelemenin yeterli olduğunu düşünüyorum.</p>
+
+<ul>
+  <li>
+    <p><img src="http://ferdogan.net/assets/of3.png" alt="of3" /></p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/of4.png" alt="of4" /></p>
+  </li>
+  <li>
+    <p><img src="http://ferdogan.net/assets/of6.png" alt="of6" /></p>
+  </li>
+</ul>
+
+<h2 id="nasl-korunabilirim">Nasıl Korunabilirim??</h2>
+
+<ul>
+  <li>
+    <p>Otomatik güncelleştirmeleri aktif edin.</p>
+  </li>
+  <li>
+    <p>PDF dosyasının browser ile entegre çalışmasını engelleyin.</p>
+  </li>
+  <li>
+    <p>Tüm Adobe ürünlerinin son patch ve update sürümlerini kullanın.</p>
+  </li>
+  <li>
+    <p>JavaScript’i deaktif edin.</p>
+  </li>
+  <li>
+    <p>“Allow non-PDF file attachments with external applications” tarzı mesaj seçeneklerini işaretlemeyin.</p>
+  </li>
+  <li>
+    <p>Alternatif PDF araçlarını kullanın.Foxit Reader, Sumatra, PDF XChange.</p>
+  </li>
+</ul>
+
+<p>Referans:
+infosecinstitute</p>
+
+<p><strong>Fatih ERDOGAN</strong>
+@FeCassie</p>
+
+   
+					
+				</div>
+			</header>
+		</article>
+	
+		<article class="post ">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					
+					linux 
+					
+				</h2>
+				<h1><a href="/linux/2014/09/27/Temel-Github-Kullanimi/">Git Kurulumu ve Kullanımı(Başlangıç)</a></h1>
+				<span>
+					<i class="fa fa-clock-o"></i><time datetime="2014-09-27">September 27, 2014</time>.
+				</span>
+				<div class="excerpt">
+					
+						<p>Merhabalar,
+Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.</p>
+
+<p>Neyse fazla uzatmadan başlayalım…</p>
+
+<h2 id="terimler">Terimler</h2>
+<ul>
+  <li>
+    <font color="red">repository (kod deposu): </font>
+    <p>Tüm kodlarımızın barındırıldığı depoya verilen genel isim.Proje dizininizde git init komutu çalıştırılarak o dizinde bir repository oluşturabilirsiniz.Birazdan hepsine değineceğiz.</p>
+  </li>
+  <li>
+    <font color="red">commit (taahhüt): </font>
+    <p>Bir dosyada yaptığınız değişikliklerin kalıcı olması için gereken taahhüt.Böylece dosyada yaptığınız değişiklikler repository’nize kaydedilir.</p>
+  </li>
+</ul>
+
+<h2 id="kurulum-ve-yaplandrma">Kurulum ve Yapılandırma</h2>
+
+<ul>
+  <li>
+    <p>İlk olarak <a href="http://github.com/">github.com</a>‘a üye olup kendi hesabınızı açmak gerekmekte.Bu kısımda çok zorlanılmayacağını düşündüğüm için çok üstünde durmadan geçiyorum.</p>
+  </li>
+  <li>Terminal ekranı açalım ve aşağıdaki komutu yazalım.
+    <ul>
+      <li><code>sudo apt-get install git-core curl</code></li>
+    </ul>
+
+    <p>Bu komutla git’i linux sistemimize kurduk.Şimdi sıra global ayarlara geldi.</p>
+  </li>
+  <li>Yine aşağıdaki komutları terminalden kendinize göre düzenleyerek sırayla girin.
+    <ul>
+      <li><code>git config --global user.name "FeCassie"</code></li>
+      <li><code>git config --global user.email fatiherdogan94@gmail.com</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git1.png" alt="ilk adım" /></p>
+
+<ul>
+  <li>
+    <p>Bu adımda kendi bilgisayarımızı Github’a tanıtmak için ssh anahtarı oluşturuyoruz.Oluşturduğumuz ssh anahtarlarından id_rsa.pub olanı github’da tanıtarak bu adımı da halletmiş oluyoruz.
+İlk adımda sorulan soruyu enter’a basarak geçin.Sonrasında bizden parola isteyecek.Bu alanı uygun parolayla doldurun.</p>
+
+    <ul>
+      <li><code>ssh-keygen</code> komutuyla ssh anahtarını oluşturuyoruz.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Ardından oluşturduğumuz ssh anahtarını kopyalayalım</p>
+
+    <ul>
+      <li>
+        <p><code>cd ~</code> komutu ile home dizinine geçiş yapalım.</p>
+      </li>
+      <li>
+        <p><code>gedit .ssh/id_rsa.pub</code> komutu ile dosyayı açın ve tümünü seçip kopyalayın.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git2.png" alt="id_rsa" /></p>
+
+<ul>
+  <li>Evet şimdi kopyaladığımız key’i github hesabımıza ekleyelim. “settings” butonuna tıklayın, sonra SSH keys bölümüne girin, daha sonra “Add SSH key” butonuna basarak aşağıda gösterdiğim gibi ssh anahtarınızı ilgili alana kopyalayın.Ardından “Add key” butonuna tıklayarak işlemi tamamlayın.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git3.png" alt="git" /></p>
+
+<h2 id="depo-oluturmak-ve-dosya-gndermek">Depo Oluşturmak ve Dosya Göndermek</h2>
+
+<ul>
+  <li>Öncelikle depo oluşturmak için Github’ta Repositories kısmından New butonuna tıklayarak istediğiniz depo ismini girin ve Create repository butonuna tıklayın.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git4.png" alt="git" />	</p>
+
+<ul>
+  <li>Daha sonra terminalden:
+    <ul>
+      <li><code>mkdir ferdogan</code></li>
+      <li><code>cd ferdogan</code></li>
+      <li><code>git init</code> komutu ile .git dosyalarını oluşturalım.</li>
+      <li><code>touch README.md</code></li>
+      <li><code>git add README.md</code></li>
+      <li><code>git commit -m "ilk"</code></li>
+      <li><code>git remote add origin git@github.com:FeCassie/ferdogan.git</code></li>
+      <li><code>git push origin master</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git5.png" alt="git" /></p>
+
+<ul>
+  <li>Evet şimdi depomuza ilk dosyamızı eklemek için aşağıdakileri yapalım.
+    <ul>
+      <li><code>cd ferdogan</code></li>
+      <li><code>ls</code></li>
+      <li><code>vim mini_program.py</code>  siz gedit editörünü de kullanabilirsiniz.</li>
+      <li><code>git add mini_program.py</code></li>
+      <li><code>git commit -a -m "ilk programım"</code></li>
+      <li><code>git push origin master</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git6.png" alt="git" /></p>
+
+<ul>
+  <li>Şimdi hesabınızdan Repositories kısmına gelerek depomuzun oluştuğunu ve içinde minik programımızın olduğunu görebilirsiniz.</li>
+</ul>
+
+<p><img src="http://ferdogan.net/assets/git7.png" alt="git" /></p>
+
+<p><img src="http://ferdogan.net/assets/git8.png" alt="git" /></p>
+
+<p>Evet bir yazının daha sonuna geldik.Elimden geldiği kadarıyla github kurulumunu, depo oluşturup içine dosya veya projelerimizi göndermeyi anlatmaya çalıştım.Temel seviyede olması nedeniyle depo klonlama, ekip çalışması, pull&amp;push gibi konulara değinmedim.Belki bir başka yazıda o konulara da değinebilirim.</p>
+
+<p>Umarım faydalı olmuştur.Bir başka yazıda görüşmek üzere…</p>
+
+   
+					
+				</div>
+			</header>
+		</article>
+	
+		<article class="post ">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					
+					linux 
+					
+				</h2>
+				<h1><a href="/linux/2014/09/26/Linuxta-Site-Engellemek/">Linux'ta Site Engellemek</a></h1>
+				<span>
+					<i class="fa fa-clock-o"></i><time datetime="2014-09-26">September 26, 2014</time>.
+				</span>
+				<div class="excerpt">
+					
+						<p>Merhaba,
+Linux’ta belli web sitelerine giriş yapılmasını engelleyebilirsiniz.Bu tarz bir şeyi sanırım sunucularda kullanırsınız veya kişisel bilgisayarınızdan da belli sitelere giriş yapılmasını engelleyebilirsiniz :)</p>
+
+<p>Varsayalım ki engellemek istediğiniz site benim blogum olsun(umarım böyle bir şey olmaz) :) 
+Yani sitenin adı ferdogan.net</p>
+
+<p><code>sudo vim /etc/hosts</code> komutuyla hosts dosyasını açıp içine site ismi ve IP adresi eklememiz gerekiyor.</p>
+
+<p><code>0.0.0.0 ferdogan.net</code></p>
+
+<p>bu satırı ekleyip dosyayı kaydettikten sonra ferdogan.net adresine girmeyi deneyin.
+Bağlantı hatası verdiğini göreceksiniz, çünkü ferdogan.net için IP adresini 0.0.0.0 olarak tanımladık.Böyle bir IP adresi yok, bu yüzden bağlantı hatası çıktı karşımıza yani bir nevi engellemiş olduk.</p>
+
+<p>Ayarları tekrar eski haline döndürmek istiyorsanız yine aynı şekilde hosts dosyasının içerisine girip ilgili satırı silebilirsiniz.</p>
+   
+					
+				</div>
+			</header>
+		</article>
+	
+		<article class="post ">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					
+					linux 
+					
+				</h2>
+				<h1><a href="/linux/2014/09/26/Linuxta-DNS-Degistirmek/">Linux'ta DNS Değiştirmek</a></h1>
+				<span>
+					<i class="fa fa-clock-o"></i><time datetime="2014-09-26">September 26, 2014</time>.
+				</span>
+				<div class="excerpt">
+					
+						<p>Merhaba,</p>
+
+<p>Engellenmiş sitelere girmek için vs. DNS değiştirme,VPN veya proxy kullanımı gibi farklı yöntemler var.Bende sizlere linuxta kolay bir şekilde nasıl DNS değiştirildiğini göstermeye karar verdim.
+DNS ayarlarını yapmak için etc dizini altında bulunan resolv.conf isimli konfigürasyon dosyasının içeriğini değiştirmemiz gerekiyor.
+Default olarak dosyanın içinde şöyle bir şey yazması gerek:
+    <code>nameserver 127.0.0.1</code></p>
+
+<p>Bu alanı kullanmak istediğiniz DNS değerlerine göre düzenlemeniz gerekiyor.Bunun için google dns veya opendns kullanabilirsiniz.
+Sık kullanımı açısından Google DNS ayarlamalarını kullanalım.
+Önce terminal ekranı açalım ve resolv.conf dosyasını root yetkisiyle açalım.Ben editör olarak vim kullanıyorum, sizde kolaylık açısından kullandığınız editörle düzenleyebilirsiniz. 
+    <code>~$ sudo vim /etc/resolv.conf</code>
+İçindeki nameserver kısmında google dns’e göre düzenlemeyi aşağıdaki gibi yapalım:
+    <code>nameserver 8.8.8.8</code>
+    <code>nameserver 8.8.4.4</code>
+OpenDNS ayarlarını kullanmak içinse:
+    <code>nameserver 208.67.222.222</code>
+    <code>nameserver 208.67.220.220</code>
+şeklinde resolv.conf dosyasını düzenleyelim ve ayarları kaydedip editörü kapatalım.(vim’de :wq komutunu kullanabilirsiniz.)</p>
+
+<p>Fakat bu ayarlamalar tek kullanımlık oluyor.Yani siz linux sisteminizi yeniden başlattığınızda DNS ayarları tekrar eski haline dönecektir.
+Bunun kalıcı olması için:
+    <code>chattr +i /etc/resolv.conf</code>
+Son olarak bu komutla da yaptığımız ayarlar kalıcı hale geldi.</p>
+   
+					
+				</div>
+			</header>
+		</article>
+	
+		<article class="post ">
+			<header>
+				<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+				<h2>
+					
+				</h2>
+				<h1><a href="/2014/09/14/Linuxta-Dosya-Sifreleme/">Linux'ta Dosya Şifreleme</a></h1>
+				<span>
+					<i class="fa fa-clock-o"></i><time datetime="2014-09-14">September 14, 2014</time>.
+				</span>
+				<div class="excerpt">
+					
+						<p>Merhaba,
+Bu gece ilgimi çeken bir konuyu sizlerle paylaşmak istedim.Peki ne bu? Dosya Şifreleme!.Dosyaları şifrelemek, verileri saklamak vs. çoğu insanın ilgisini çekiyordur mutlaka.Benimde sadece TrueCrypt yazılımıyla şifreleme konusunda bilgim olmuştu, sonra işin linux kısmını araştırınca benzer şeylerin burada da yapıldığını gördüm ve bununla ilgili bir yazı yazmaya karar verdim.</p>
+
+<h3 id="peki-nasl-olacak-bu">Peki nasıl olacak bu?</h3>
+
+<p>Linux dağıtımlarında default olarak bulunan, SSL ve TSL protokollerinin açık kaynaklı bir uygulaması olan <font color="green">openssl</font>‘i dosyalarınızı şifrelemek veya hash değerlerini almakta kullanabilirsiniz.</p>
+
+<h3 id="tamam-anladm-hadi-balayalm">Tamam anladım, hadi başlayalım!</h3>
+
+<p>Sisteminizde openssl’in hangi versiyonda çalıştığını öğrenmek için <code>~$ openssl version</code> komutunu verebilirsiniz.</p>
+
+<ul>
+  <li>
+    <p>Şifreleme algoritmalarını listelemek için
+  <code>~$ openssl ciphers -v</code></p>
+  </li>
+  <li>
+    <p>İlk olarak des3 algoritmasıyla sifrelebeni.txt dosyasını şifreleyelim.Şifreleme mantığı, belirlenen algoritma ve kendi belirlediğimiz bir anahtar eşliğiyle oluşuyor.Nasıl yani?
+Şifreleme için bir algoritmaya ve sadece bize ait bir anahtara ihtiyacımız var.Bu anahtar ile dosyayı hem şifreleyebilir hem de tekrar şifrelenmiş dosyayı açabiliriz.Şifrelediğimiz dosyayı açarken de bu anahtar bize lazım olacak.
+Şifrelenmiş dosya açılsa bile anahtar bilinmediği sürece dosyanın içindeki gerçek veriye ulaşılamayacaktır.
+  <code>~$ openssl enc -des3 -in sifrelebeni.txt -k anahtar</code> komutuyla dosyamızı belirlediğimiz anahtarı kullanarak des3 algoritması ile şifreledik.
+<img src="http://ferdogan.net/assets/1.png" alt="des3 şifreleme" /></p>
+  </li>
+</ul>
+
+<p>Şifrelenmiş içeriği bir dosyaya yazmak istersek <code>~$ openssl enc -des3 -in sifrelebeni.txt -out sifrelendi.des3 -k anahtar</code> komutunu kullanabiliriz.</p>
+
+<p><img src="http://ferdogan.net/assets/2.png" alt="des3 şifreleme2" /></p>
+
+<ul>
+  <li>Eğer dosya değilde komple bir dizini şifrelemek istiyorsak tar, openssl ve dd komutlarını birlikte kullanmamız gerekiyor.</li>
+</ul>
+
+<p><code>~$ tar -zcf - dizin/ | openssl des3 -salt -k anahtar | dd of=dizin.des3</code>
+<img src="http://ferdogan.net/assets/3.png" alt="des3 şifreleme3" /></p>
+
+<p>Şifrelenmiş dizini çözmek için ise;
+<code>~$ dd if=dizin.des3 | openssl des3 -d -k anahtar | tar xzf -</code></p>
+
+<p><img src="http://ferdogan.net/assets/4.png" alt="des3 şifreleme4" /></p>
+
+<p>Görüldüğü üzere linux’ta dosyalar bu şekilde şifreleniyor ve şifreleri çözülebiliyor.Tabi bunların hepsini yaparken bir anahtar belirlememiz, çözerken de o anahtarı bilmemiz şart.
+Bir başka yazıda görüşmek üzere..</p>
+
+<p><a href="http://ferdogan.net">Fatih ERDOGAN</a> (<a href="https://twitter.com/FeCassie">@FeCassie</a>)</p>
+
+   
+					
+				</div>
+			</header>
+		</article>
+	
+
+	<div class="pagination">
+	
+		<a href="/page2" class="smallbutton lightgray left"><i class="fa fa-chevron-left"></i><span>Older Posts</span></a>
+	
+	
+</div>
+
+</section>
+
+    <footer class="wrapper">
+    <div class="smallnav">
+    	
+        	
+        
+        	<a href="/about/">About</a> &bull;
+        
+        	
+        
+        	
+        
+        	
+        
+        	
+        
+    </div>
+    <div>
+        Copyright &copy; <a href="http://ferdogan.net/">Fatih Erdogan</a>. 2014 &bull; All rights reserved.
+    </div>
+</footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      var config = {
+        'disqus_shortname': 'fatiherdogan',
+        'google_comments': false,
+        'analytics_id': '',
+        'analytics_domain': '',
+        'readingtime': true,
+        'autoload_comments': true
+      };
+    </script>
+    <script async type="text/javascript" src="/assets/js/theme.min.js"></script>
+
+  </body>
 </html>

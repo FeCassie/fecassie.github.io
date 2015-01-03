@@ -38,7 +38,7 @@ theme_google_comments: 		false
 theme_analytics_id: 		""
 #theme_analytics_domain: 	"ecko.me"
 theme_reading_time: 		true
-theme_autoload_comments: 	true
+theme_autoload_comments: 	false
 theme_always_show_nav: 		false
 
 

@@ -11,7 +11,7 @@ tags: [backtrack5, cupp, linux, security, wordlist]
 Merhaba,
 
 Bu konumda Backtrack5 içinde bulunan python dili ile kodlanmış CUPP programı ile "Interactive Wordlist" oluşturmayı anlatacağım.
-
+<!--more-->
 Interaktif wordlist;ad soyad,takma ad,doğum günü,nickname vs. gibi anahtar kelimelerle oluiturulan wordlist dosyasıdır.
 
 CUPP ile Wordlist Oluşturma’yı video şeklinde anlattım.

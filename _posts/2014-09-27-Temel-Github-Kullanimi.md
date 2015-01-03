@@ -8,7 +8,8 @@ tags: [linux,github]
 categories: Linux
 ---
 Merhabalar,
-Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.
+Birkaç arkadaşımın da isteğiyle bugün Git kurulumu ve temel kullanımı hakkında bir yazı yazmaya karar verdim.Platform olarak Linux üzerinde anlattım, ilerleyen yazılarda windows üzerinde kurulumunu da anlatabilirim.Her neyse, belki daha önce duymuş olabilirsiniz, Github yazılımcıların sosyal platformu olarak geçer.Ekip halinde projeler geliştirmeye veya kişisel projelerimizi bize online ortamda barındırma imkanı sağlar.<!--more-->
+
 
 Neyse fazla uzatmadan başlayalım...
 

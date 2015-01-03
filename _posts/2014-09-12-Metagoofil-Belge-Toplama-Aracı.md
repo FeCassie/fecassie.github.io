@@ -11,7 +11,7 @@ Merhabalar,
 
 Bu gece Backtrack5 ile birlikte gelen bilgi toplama araçlarından biri olan Metagoofil isimli araçtan söz edeceğim.
 
-Metagoofil,web sitelerinden belge toplamaya yarayan bir araçtır.İstenilen domain ve ona ait olan subdomainler içerisinde istenilen formattaki dosya tiplerini bulabilir.
+Metagoofil,web sitelerinden belge toplamaya yarayan bir araçtır.İstenilen domain ve ona ait olan subdomainler içerisinde istenilen formattaki dosya tiplerini bulabilir.<!--more-->
 Belge araması yaparken Google arama motorunu kullanır.
 Word(.doc),Excel(.xls),Sunum Dosyaları(.pdf,.ppt,.odp) dosya formatlarını destekler.
 

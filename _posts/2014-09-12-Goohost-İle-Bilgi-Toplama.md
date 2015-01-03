@@ -9,7 +9,7 @@ tags: [backtrack5, goohost, linux, security, footprinting, kali]
 
 Goohost,Google arama motoru kullanarak belirli bir DNS içindeki Host,Subdomain,IP Adresleri,e-postaları araştıran Backtrack5 altında bulunan basit bir araçtır.
 watakushi kod adlı yazar tarafından,Bash Script dili ile kodlanmıştır.
-
+<!--more-->
 `cd /pentest/enumeration/google/goohost` dizininden
 veya Uygulamalar menüsünden;
 `BackTrack > Vulnerability Assessment > Web Application Assessment > Web Open Source Assessment > goohost` şeklinde programa ulaşabilirsiniz.

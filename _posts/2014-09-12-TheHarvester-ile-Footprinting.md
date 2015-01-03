@@ -11,7 +11,7 @@ Merhaba,
 Backtrack ile hedef sistem hakkında bilgi toplamanın farklı araçlarla birçok yolu vardır.
 Daha önceki yazımda yine Backtrack içerisinde bulunan Metagoofil aracıyla hedef sistemden nasıl pdf,doc vs. gibi belge toplayabileceğimizi anlatmıştım.
 [Metagoofil ile Belge Toplama](http://fecassie.github.io/Metagoofil-Belge-Toplama-Aracı/)
-
+<!--more-->
 Şimdi ise belge değilde daha farklı bilgi edinme yöntemlerinden bahsedeceğim.
 Öncelikle bilgi toplamanın önemine biraz değinmek istiyorum.
 Hedef sistem hakkında bilgi toplamanın; zafiyet tespit etme,portların durumunu,firewall ları,çalışan işletim sistemlerini ve IPS denilen saldırı tespit sistemlerinin keşfedilmesi kadar önemli olduğunu düşünüyorum.

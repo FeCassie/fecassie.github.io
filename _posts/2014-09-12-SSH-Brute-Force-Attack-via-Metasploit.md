@@ -10,7 +10,7 @@ tags: [backtrack5, kali linux, linux, security, metasploit, ssh]
 Merhabalar,
 Metasploit’teki scanner modülü ile SSH servere yapılan Brute Force saldırısı hakkında bir videolu anlatım yaptım.
 Ama önce bazı terimleri konunun yararı açısından incelememizde fayda var.
-
+<!--more-->
 ## SSH Nedir? ##
 SSH (Secure Shell) yani Güvenli Kabuk; makinalar arasındaki iletişimi,dosya transferini,
 uzak makinalarda komut çalıştırmayı sağlamak için geliştirilmiş güvenli iletşim protokolüdür.

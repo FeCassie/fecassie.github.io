@@ -9,7 +9,7 @@ tags: [linux, cryptography, openssl]
 
 Merhaba,
 Bu gece ilgimi çeken bir konuyu sizlerle paylaşmak istedim.Peki ne bu? Dosya Şifreleme!.Dosyaları şifrelemek, verileri saklamak vs. çoğu insanın ilgisini çekiyordur mutlaka.Benimde sadece TrueCrypt yazılımıyla şifreleme konusunda bilgim olmuştu, sonra işin linux kısmını araştırınca benzer şeylerin burada da yapıldığını gördüm ve bununla ilgili bir yazı yazmaya karar verdim.
-
+<!--more-->
 ### Peki nasıl olacak bu? ###
 
 Linux dağıtımlarında default olarak bulunan, SSL ve TSL protokollerinin açık kaynaklı bir uygulaması olan <font color="green">openssl</font>'i dosyalarınızı şifrelemek veya hash değerlerini almakta kullanabilirsiniz.

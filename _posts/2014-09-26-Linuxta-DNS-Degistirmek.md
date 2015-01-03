@@ -10,7 +10,7 @@ categories: Linux
 Merhaba,
 
 Engellenmiş sitelere girmek için vs. DNS değiştirme,VPN veya proxy kullanımı gibi farklı yöntemler var.Bende sizlere linuxta kolay bir şekilde nasıl DNS değiştirildiğini göstermeye karar verdim.
-DNS ayarlarını yapmak için etc dizini altında bulunan resolv.conf isimli konfigürasyon dosyasının içeriğini değiştirmemiz gerekiyor.
+DNS ayarlarını yapmak için etc dizini altında bulunan resolv.conf isimli konfigürasyon dosyasının içeriğini değiştirmemiz gerekiyor.<!--more-->
 Default olarak dosyanın içinde şöyle bir şey yazması gerek:
     `nameserver 127.0.0.1`
 

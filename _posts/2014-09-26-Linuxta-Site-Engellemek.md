@@ -9,7 +9,7 @@ categories: Linux
 ---
 Merhaba,
 Linux'ta belli web sitelerine giriş yapılmasını engelleyebilirsiniz.Bu tarz bir şeyi sanırım sunucularda kullanırsınız veya kişisel bilgisayarınızdan da belli sitelere giriş yapılmasını engelleyebilirsiniz :)
-
+<!--more-->
 Varsayalım ki engellemek istediğiniz site benim blogum olsun(umarım böyle bir şey olmaz) :) 
 Yani sitenin adı ferdogan.net
 

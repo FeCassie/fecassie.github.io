@@ -53,3 +53,5 @@ sass:
 markdown: 					kramdown
 permalink: 					pretty
 
+
+gems: [read_more]

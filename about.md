@@ -5,10 +5,10 @@ permalink: /about/
 comments: false
 ---
 
-**Education:** Sakarya University - Computer Engineering
+**Education:**  Sakarya University - Computer Engineering
 
-**Job:** Assistant Engineer at SaüSEM
+**Job:**  Assistant Engineer at SaüSEM
 
-**Interests:** Reverse Engineering, Malware Analysis, Penetration Testing
+**Interests:**  Reverse Engineering, Malware Analysis, Penetration Testing
 
-**Hobbies:** Linux, Geometry, Drums, Biking, Tennis
+**Hobbies:**  Linux, Geometry, Drums, Biking, Tennis

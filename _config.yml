@@ -7,7 +7,7 @@ description: 				"security researcher adayı"
 baseurl: 					""
 url: 						"http://ferdogan.net"
 logourl: 					"/assets/img/authorimage.jpg"		
-fa-logo: 					"fa-terminal"
+fa-logo: 					"fa-bookmark-o"
 paginate: 					5
 locale:           			tr_TR
 

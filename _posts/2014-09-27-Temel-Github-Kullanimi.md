@@ -92,7 +92,5 @@ Evet bir yazının daha sonuna geldik.Elimden geldiği kadarıyla github kurulum
 
 Umarım faydalı olmuştur.Bir başka yazıda görüşmek üzere...
 
-{% highlight bash %}
-cd ~/Desktop
-{% endhighlight %}
+
 

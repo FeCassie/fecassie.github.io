@@ -9,6 +9,6 @@ comments: false
 
 **Job:**  Assistant Engineer at SaüSEM
 
-**Interests:**  Reverse Engineering, Malware Analysis, Penetration Testing
+**Interests:**  Reverse Engineering, Exploit Development, Penetration Testing
 
 **Hobbies:**  Linux, Geometry, Drums, Biking, Tennis

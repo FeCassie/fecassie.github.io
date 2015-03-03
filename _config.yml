@@ -36,10 +36,10 @@ linkedin_url:  				"http://linkedin.com/in/fatiherdogan1/"
 theme_disqus_shortname: 	"fatiherdogan"
 theme_google_comments: 		false
 theme_analytics_id: 		""
-#theme_analytics_domain: 	"ecko.me"
+#theme_analytics_domain: 	"ferdogan.net"
 theme_reading_time: 		true
 theme_autoload_comments: 	false
-theme_always_show_nav: 		false
+theme_always_show_nav: 		true
 
 
 # SASS Settings

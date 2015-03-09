@@ -5,9 +5,9 @@ permalink: /about/
 comments: false
 ---
 
-**Education:**  Sakarya University - Computer Engineering
-
 **Job:**  Assistant Engineer at SaüSEM
+
+**Education:**  Sakarya University - Computer Engineering
 
 **Interests:**  Reverse Engineering, Exploit Development, Penetration Testing
 

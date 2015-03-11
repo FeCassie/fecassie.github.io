@@ -5,7 +5,7 @@ permalink: /about/
 comments: false
 ---
 
-**Job:**  Assistant Engineer at SaüSEM
+**Job:**  Intern at [SignalSEC](http://www.signalsec.com)
 
 **Education:**  Sakarya University - Computer Engineering
 

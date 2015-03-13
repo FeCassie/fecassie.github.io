@@ -3,7 +3,7 @@
 # Site Settings
 title: 						"Fatih Erdogan"
 email: 						"fatiherdogan94@gmail.com"
-description: 				"security researcher adayı"
+description: 				"Intern at SignalSEC"
 baseurl: 					""
 url: 						"http://ferdogan.net"
 logourl: 					"/assets/img/authorimage.jpg"		
@@ -15,7 +15,7 @@ locale:           			tr_TR
 # Author Settings
 author_name: 				"Fatih Erdogan"
 author_url: 				"http://ferdogan.net"
-author_bio: 				"security researcher adayı"
+author_bio: 				"Intern at SignalSEC"
 author_email: 				"fatiherdogan94@gmail.com"
 author_image: 				"/assets/img/authorimage.jpg"
 

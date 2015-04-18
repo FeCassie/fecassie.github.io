@@ -7,8 +7,8 @@ comments: false
 
 **Job:**  Intern at [SignalSEC](http://www.signalsec.com)
 
-**Education:**  Sakarya University - Computer Engineering
+**Education:**  Sakarya University - Computer Engineering (2014 - ...)
 
-**Interests:**  Reverse Engineering, Exploit Development, Vulnerability Analysis
+**Interests:**  Reverse Engineering, Exploit Development, Vulnerability Researching
 
 **Hobbies:**  Linux, Geometry, Drums, Biking, Tennis

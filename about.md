@@ -9,6 +9,6 @@ comments: false
 
 **Education:**  Sakarya University - Computer Engineering (2014 - ...)
 
-**Interests:**  Vulnerability Researching, Exploit Development, Reverse Engineering
+**Interests:**  Vulnerability Research, Exploit Development, Reverse Engineering
 
-**Hobbies:**  Linux, Geometry, Drums, Biking, Tennis
+**Hobbies:**  Coffee, Linux, Geometry, Cars, Biking, Drums, Tennis

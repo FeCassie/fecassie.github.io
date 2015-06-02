@@ -11,4 +11,4 @@ comments: false
 
 **Interests:**  Vulnerability Research, Exploit Development, Reverse Engineering
 
-**Hobbies:**  Coffee, Linux, Geometry, Cars, Biking, Drums, Tennis
+**Hobbies:**  Fuzzing, Coffee, Geometry, Cars, Biking, Drums

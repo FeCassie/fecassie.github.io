@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fuzzing Mobile - 101"
-date:   2016-06-24 18:23:00
+date:   2015-06-24 18:23:00
 categories: Security
 banner_image: "/assets/drilii.jpg"
 featured: false

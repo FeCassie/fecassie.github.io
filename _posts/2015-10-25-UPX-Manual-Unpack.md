@@ -8,6 +8,9 @@ featured: false
 comments: true
 ---
 
+Merhaba,
+Bu yazıda UPX packing ve manual unpacking aşamalarını inceleyeceğiz.
+
 # UPX Packing&Unpacking  #
 
 ## UPX ##

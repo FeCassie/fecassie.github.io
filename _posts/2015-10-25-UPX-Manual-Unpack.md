@@ -11,6 +11,7 @@ comments: true
 Merhaba,
 Bu yazıda UPX packing ve manual unpacking aşamalarını inceleyeceğiz.
 <!--more-->
+
 # UPX Packing&Unpacking  #
 
 ## UPX ##

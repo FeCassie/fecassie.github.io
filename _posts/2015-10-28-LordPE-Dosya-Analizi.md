@@ -1,8 +1,18 @@
-# LordPE ile Dosya Analizi  #
+---
+layout: post
+title:  "LordPE ile Dosya Analizi"
+date:   2015-10-28 22:6:00
+categories: Security
+banner_image: "/assets/drilii.jpg"
+featured: false
+comments: true
+---
 
 Merhaba,
 Bu yazıda LordPE ve strings araçlarını kullanarak, basit bir şekilde çalışan bir uygulamayı analiz ederek bilgi edinmeye çalışacağız.
 <!--more-->
+
+# LordPE ile Dosya Analizi  #
 
 Bir önceki yazıda UPX ile Manual Unpack etmeyi incelemiştik.Dolayısıyla Packing-Packed gibi kavramlara da değinmiştik.
 

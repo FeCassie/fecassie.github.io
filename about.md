@@ -5,7 +5,7 @@ permalink: /about/
 comments: false
 ---
 
-**Job:**  Intern Security Researcher at [SignalSEC Ltd.](http://www.signalsec.com)
+**Job:**  Cyber Security Researcher at [Prodaft/INVICTUS Europe](https://www.invictuseurope.com/)
 
 **Education:**  Sakarya University - Computer Engineering (2014 - ...)
 

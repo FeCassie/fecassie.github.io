@@ -3,7 +3,7 @@
 # Site Settings
 title: 						"Fatih Erdogan"
 email: 						"fatiherdogan94@gmail.com"
-description: 				"Intern at SignalSEC"
+description: 				"PRODAFT/INVICTUS Europe"
 baseurl: 					""
 url: 						"http://ferdogan.net"
 logourl: 					"/assets/img/authorimage.jpg"		
@@ -15,7 +15,7 @@ locale:           			tr_TR
 # Author Settings
 author_name: 				"Fatih Erdogan"
 author_url: 				"http://ferdogan.net"
-author_bio: 				"Intern at SignalSEC"
+author_bio: 				"PRODAFT/INVICTUS Europe"
 author_email: 				"fatiherdogan94@gmail.com"
 author_image: 				"/assets/img/authorimage.jpg"
 

@@ -5,7 +5,7 @@ permalink: /about/
 comments: false
 ---
 
-**Job:**  Cyber Security Researcher at [Prodaft/INVICTUS Europe](https://www.invictuseurope.com/)
+**Job:**  Threat Intelligence Analyst at [PRODAFT/INVICTUS Europe](https://www.invictuseurope.com/)
 
 **Education:**  Sakarya University - Computer Engineering (2014 - ...)
 

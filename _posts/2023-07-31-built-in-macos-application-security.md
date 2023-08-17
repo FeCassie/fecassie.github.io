@@ -12,5 +12,4 @@ mermaid: true
 lorem ipsum
 
 ## macOS
-lorem ipsum dolor
-test
+lorem ipsum dolor sit amet

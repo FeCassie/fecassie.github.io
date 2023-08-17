@@ -3,7 +3,7 @@ title: A Closer Look At Built-In macOS Application Security
 author: ferdogan
 date: 2023-07-31 00:00:00 +0800
 categories: [macOS Security]
-tags: [<span style="color:yellow">●</span> macOS, <span style="color:red">●</span> security, <span style="color:blue">●</span> internals, <span style="color:gray">●</span> Apple]
+tags: [<span style="color:red">●</span> macOS, <span style="color:blue">●</span> security, <span style="color:yellow">●</span> internals, <span style="color:gray">●</span> Apple]
 pin: false
 mermaid: true
 ---

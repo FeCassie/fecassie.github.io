@@ -18,4 +18,4 @@ order: 4
 
 <i class="fab fa-twitter" aria-hidden="true"></i> **Twitter**: [@FeCassie](https://twitter.com/FeCassie)
 
-<i class="fab fa-github" aria-hidden="true"></i> **FeCassie**: [@antoniopelusi](https://github.com/FeCassie)
+<i class="fab fa-github" aria-hidden="true"></i> **Github**: [@FeCassie](https://github.com/FeCassie)

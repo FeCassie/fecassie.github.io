@@ -20,7 +20,7 @@ timezone: Europe/Istanbul
 
 title: Fatih ERDOĞAN # the main title
 
-tagline: Security Researcher # it will display as the sub-title
+tagline: Security Engineer # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   ferdogan's blog.
@@ -37,8 +37,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Fatih ERDOĞAN
-  email: example@domain.com # change to your email address
+  name: Fatih ERDOGAN
+#  email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/FeCassie # change to your twitter homepage
@@ -73,10 +73,10 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: "https://avatars.githubusercontent.com"
+img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/u/7360918?v=4"
+avatar: "https://avatars.githubusercontent.com/u/7360918?v=4"
 
 # boolean type, the global switch for TOC in posts.
 toc: true

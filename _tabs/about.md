@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 6
 ---
 
 I've worked on various digital forensics incident response, threat research and threat hunting teams throughout my career.

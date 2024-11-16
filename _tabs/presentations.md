@@ -8,4 +8,5 @@ order: 2
 
 ## [Devfest Istanbul 2024](https://devfest.istanbul/)
 #### Adversarial Attacks to Next Generation Antivirus Models
-[![Adversarial Attacks to Next Generation Antivirus Models](/assets/img/img/devfest_cover.png "Adversarial Attacks to Next Generation Antivirus Models")](https://fecassie.github.io/assets/files/DevfestIstanbul_Adversarial_Attacks_to_Next_Generation_Models.pdf)
+
+[![Adversarial Attacks to Next Generation Antivirus Models](/assets/img/img/devfest_cover.png "Adversarial Attacks to Next Generation Antivirus Models")](https://github.com/FeCassie/fecassie.github.io/blob/main/assets/files/DevfestIstanbul_Adversarial_Attacks_to_Next_Generation_Models.pdf)

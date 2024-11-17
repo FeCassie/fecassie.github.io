@@ -46,6 +46,6 @@ Ankara, Turkey
 
 <ins>**[Slides](https://github.com/FeCassie/Presentations/blob/main/Hacktrick_2018__The_Evolution_of_Android_Banking_Threats.pdf)**</ins>
 
-{% include embed/youtube.html id='1De-JDFrrwQ' %}
-
 [![The Evolution of Android Banking Threats](/assets/img/hacktrick18_cover.png "The Evolution of Android Banking Threats")]()
+
+{% include embed/youtube.html id='1De-JDFrrwQ' %}

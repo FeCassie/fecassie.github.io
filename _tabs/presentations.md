@@ -4,6 +4,16 @@ icon: fa fa-flask
 order: 2
 ---
 
+# <ins>2025</ins>
+
+## [BSides Prishtina](https://bsidesprishtina.org/)
+
+**PERSEPTOR: Automating Detection Rule Generation with AI-Driven Threat Intelligence**
+
+Prishtina, Kosovo
+
+{% include embed/youtube.html id='AWQGmZDme60' %}
+
 # <ins>2024</ins>
 
 ## [DevFest Istanbul](https://devfest.istanbul/)

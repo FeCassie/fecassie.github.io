@@ -84,7 +84,7 @@ jobs:
 
       # Create pages artifact for the deployment
       - name: Create Pages Artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
 

@@ -20,7 +20,7 @@ timezone: Europe/Istanbul
 
 title: Fatih ERDOGAN # the main title
 
-tagline: endpoint security, dfir, detection engineering # it will display as the sub-title
+tagline: detection engineering, AI security, R&D # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   ferdogan's blog.
@@ -52,8 +52,8 @@ google_site_verification: # fill in to your verification string
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics:
-  id: G-M7DHRE22JG
+#google_analytics:
+#  id: 
 
 # Prefer color scheme setting.
 #

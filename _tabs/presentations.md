@@ -4,6 +4,17 @@ icon: fa fa-flask
 order: 2
 ---
 
+# <ins>2026</ins>
+
+## [2026 FIRST Regional Symposium for Central Asia](https://www.first.org/events/symposium/central-asia2026/)
+
+**Adversarial Prompts: Exploiting and Defending LLM Applications**
+
+Tashkent, Uzbekistan
+
+![AI-Powered MITRE ATT&CK Mapping: Enhancing Cyber Threat Detection](/assets/img/first_uz.png "Adversarial Prompts: Exploiting and Defending LLM Applications")
+
+
 # <ins>2025</ins>
 
 ## [BSides Prishtina](https://bsidesprishtina.org/)
